@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #bf3939;
+  background: linear-gradient(14deg, rgba(191, 57, 57, 0.7) 9%, rgba(255, 228, 203, 0.9) 100%);
+}
+
+.menu #menuContainer {
+  position: absolute;
+  z-index: 0;
+  height: 92vh;
+  width: 96%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.324);
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 16%, 86% 0);
+}
+
+.menu #menuButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  z-index: 1;
+  height: 92vh;
+  width: 96%;
+  background-color: #bf3939;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
+  clip-path: polygon(87% 0, 100% 15%, 100% 0%);
+  padding: 20px;
+  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
   color: white;
+  font-weight: 800;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

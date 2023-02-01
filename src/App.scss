@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  background: rgb(191, 57, 57);
+  background: linear-gradient(
+    14deg,
+    rgba(191, 57, 57, 0.7) 9%,
+    rgba(255, 228, 203, 0.9) 100%
+  );
+
+  #menuContainer {
+    position: absolute;
+    z-index: 0;
+    height: 92vh;
+    width: 96%;
+
+    border-radius: 4px;
+
+    background-color: rgba(255, 255, 255, 0.324);
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 16%, 86% 0);
+  }
+
+  #menuButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+    height: 92vh;
+    width: 96%;
+    background-color: #bf3939;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
+    clip-path: polygon(87% 0, 100% 15%, 100% 0%);
+    padding: 20px;
+    font-size: x-large;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-weight: 800;
+  }
+}
