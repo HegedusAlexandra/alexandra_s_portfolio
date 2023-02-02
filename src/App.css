@@ -2,10 +2,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -14,22 +14,87 @@
           align-items: center;
   height: 100vh;
   width: 100%;
-  background: #bf3939;
-  background: linear-gradient(14deg, rgba(191, 57, 57, 0.7) 9%, rgba(255, 228, 203, 0.9) 100%);
+  background: #6ebad4;
 }
 
 .menu #menuContainer {
   position: absolute;
-  z-index: 0;
+  z-index: 3;
   height: 92vh;
   width: 96%;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.324);
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 16%, 86% 0);
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  overflow: hidden;
 }
 
-.menu #menuButton {
+.menu #menuContainer .bend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 120vh;
+  -webkit-transform: rotate(-15deg) translate(20%, -10%);
+          transform: rotate(-15deg) translate(20%, -10%);
+}
+
+.menu #menuContainer .bend .greenSquare {
+  width: 10%;
+  height: 60vh;
+  background: linear-gradient(14deg, #b5d7b6 10%, #6ebad4 60%);
+  border-radius: 10px;
+  -webkit-transform: translate(40%, 0%);
+          transform: translate(40%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.menu #menuContainer .bend .blueSquare {
+  width: 14%;
+  height: 160vh;
+  background: linear-gradient(14deg, #6ebad4 10%, #bf3939 100%);
+  border-radius: 10px;
+  -webkit-transform: translate(10%, 0%);
+          transform: translate(10%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.menu #menuContainer .bend .redSquare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 40%;
+  height: 80vh;
+  background: linear-gradient(14deg, #bf3939 10%, #b5d7b6 100%);
+  border-radius: 10px;
+  -webkit-transform: translate(-10%, 0%);
+          transform: translate(-10%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.menu #menuContainer .bend .redSquare #menuButton {
+  all: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,17 +104,46 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: absolute;
-  z-index: 1;
-  height: 92vh;
-  width: 96%;
-  background-color: #bf3939;
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 85% 0);
-  clip-path: polygon(87% 0, 100% 15%, 100% 0%);
-  padding: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #75c1da;
   font-size: x-large;
-  font-family: "Courier New", Courier, monospace;
   color: white;
   font-weight: 800;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+          box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+  text-shadow: 2px 2px 2px black;
+}
+
+.menu #menuContainer .bend .redSquare #menuButton:hover {
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+          box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+  color: #fafafa;
+  text-shadow: -0.5px -0.5px 2px rgba(0, 0, 0, 0.671);
+}
+
+.menu #menuContainer h1 {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  left: 18%;
+  font-size: 170px;
+  color: aliceblue;
+  text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+}
+
+.menu #menuContainer h2 {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 30%;
+  font-size: xx-large;
 }
 /*# sourceMappingURL=App.css.map */
