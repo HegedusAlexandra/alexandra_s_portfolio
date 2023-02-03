@@ -1,0 +1,827 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;400;800&family=Nova+Mono&family=Xanh+Mono&display=swap");
+
+$green: #b5d7b6;
+$blue: #6ebad4;
+$red: #bf3939;
+$font1: "Azeret Mono", monospace;
+$font2: "Nova Mono", monospace;
+$font3: "Xanh Mono", monospace;
+
+@mixin page {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+  background-color: #6ebad4;
+}
+
+@mixin button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: fit-content;
+  width: fit-content;
+  background-color: #75c1da;
+  font-size: x-large;
+  color: white;
+  font-weight: 800;
+  font-family: $font1;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+
+  box-shadow: 2px 2px 4px rgb(0, 0, 0), -1px -1px 4px rgba(255, 255, 255, 0.527);
+  text-shadow: 2px 2px 2px black;
+}
+
+.bend {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  position: fixed;
+  z-index: 1;
+
+  width: 100%;
+  height: 120vh;
+
+  transform: rotate(-15deg) translate(35%, -20%);
+
+  animation: closeMenu ease 2s;
+
+  .greenSquare {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 10%;
+    height: 100vh;
+    background: linear-gradient(14deg, $green 10%, $blue 60%);
+
+    border-radius: 10px;
+    transform: translate(40%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: openCol1rev ease 1s;
+
+    p {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 8vh;
+      transform: rotateZ(90deg) translate(-50%, 0%);
+      margin: 0px;
+      padding-top: 30px;
+      font-family: $font2;
+      text-transform: uppercase;
+      text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.628);
+    }
+  }
+  .blueSquare {
+    width: 14%;
+    height: 160vh;
+    background: linear-gradient(14deg, $blue 10%, $red 100%);
+
+    border-radius: 10px;
+    transform: translate(10%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: openCol2rev ease 1s;
+  }
+  .redSquare {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    width: 40%;
+    height: 80vh;
+    background: linear-gradient(14deg, $red 10%, $green 100%);
+    border-radius: 10px;
+    transform: translate(-10%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: openCol3rev ease 1s;
+
+    #menuButton {
+      @include button;
+    }
+
+    #menuButton:hover {
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795),
+        inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+      color: rgb(250, 250, 250);
+      text-shadow: -0.5px -0.5px 2px rgba(0, 0, 0, 0.671);
+      cursor: pointer;
+    }
+  }
+}
+
+.bendOpen {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  position: fixed;
+  z-index: 3;
+
+  width: 100%;
+  height: 120vh;
+
+  transform: rotate(0deg) translate(20%, -10%);
+  animation: openMenu ease 2s;
+
+  .greenSquare {
+    width: 12%;
+    height: 22vh;
+    background: linear-gradient(14deg, $green 10%, $blue 60%);
+
+    border-radius: 10px;
+    transform: translate(40%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: openCol1 ease 1s;
+  }
+  .blueSquare {
+    width: 16%;
+    height: 120vh;
+    background: linear-gradient(14deg, $blue 10%, $red 100%);
+
+    border-radius: 10px;
+    transform: translate(10%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: openCol2 ease 1s;
+  }
+  .redSquare {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 40%;
+    height: 90vh;
+    background: linear-gradient(14deg, $red 10%, $green 100%);
+    border-radius: 10px;
+    transform: translate(-10%, 10%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: openCol3 ease 1s;
+
+    .linkBox {
+      margin-left: 4%;
+      margin-top: 10vh;
+      p {
+        font-family: $font2;
+        color: black;
+        font-size: 1.5vh;
+        cursor: pointer;
+      }
+
+      a {
+        all: unset;
+        display: block;
+        cursor: pointer;
+
+        margin-left: 60px;
+        font-family: $font1;
+        font-size: 5vh;
+        color: aliceblue;
+        text-shadow: 1px 2px 2px black, -1px -2px 2px black;
+      }
+    }
+
+    #menuButton {
+      all: unset;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: fit-content;
+      width: fit-content;
+      background-color: $red;
+      font-size: x-large;
+      color: white;
+      font-weight: 800;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px;
+
+      cursor: pointer;
+
+      box-shadow: 2px 2px 4px rgb(0, 0, 0),
+        -1px -1px 4px rgba(255, 255, 255, 0.527);
+      text-shadow: 2px 2px 2px black;
+    }
+
+    #menuButton:hover {
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795),
+        inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+      color: rgb(250, 250, 250);
+      text-shadow: -0.5px -0.5px 2px rgba(0, 0, 0, 0.671);
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    transform: rotate(-15deg) translate(35%, -20%);
+    z-index: 1;
+  }
+
+  100% {
+    transform: rotate(0deg) translate(20%, -10%);
+    z-index: 4;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    transform: rotate(0deg) translate(20%, -10%);
+    z-index: 4;
+  }
+  10% {
+    z-index: 1;
+  }
+  100% {
+    transform: rotate(-15deg) translate(35%, -20%);
+    z-index: 1;
+  }
+}
+
+@keyframes openCol1 {
+  0% {
+    width: 10%;
+    height: 100vh;
+  }
+  100% {
+    width: 12%;
+    height: 22vh;
+  }
+}
+@keyframes openCol2 {
+  0% {
+    width: 14%;
+    height: 160vh;
+  }
+  100% {
+    width: 16%;
+    height: 120vh;
+  }
+}
+@keyframes openCol3 {
+  0% {
+    width: 40%;
+    height: 80vh;
+    transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 40%;
+    height: 90vh;
+    transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes openCol1rev {
+  0% {
+    width: 12%;
+    height: 22vh;
+  }
+  100% {
+    width: 10%;
+    height: 100vh;
+  }
+}
+@keyframes openCol2rev {
+  0% {
+    width: 16%;
+    height: 120vh;
+  }
+  100% {
+    width: 14%;
+    height: 160vh;
+  }
+}
+@keyframes openCol3rev {
+  0% {
+    width: 40%;
+    height: 90vh;
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    width: 40%;
+    height: 80vh;
+    transform: translate(-10%, 0%);
+  }
+}
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  z-index: 4;
+
+  @include button;
+}
+//menu
+.menu {
+  .bend {
+    position: absolute;
+  }
+}
+//about
+@mixin year {
+  padding-left: 6vh;
+  font-size: 10vh;
+  font-family: $font1;
+  font-weight: 800;
+  color: aliceblue;
+  text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+}
+
+@mixin CVtextStyle {
+  font-family: $font2;
+  font-size: 3.5vh;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+}
+
+.about {
+  @include page;
+  background-color: lavenderblush;
+  height: 6000px;
+
+  display: grid;
+  grid-template-columns: [line1] 300px [line2] 300px [line3] auto [line4] 400px [lastLine];
+  grid-template-rows: [row1] 100px [row2] 200px [row3] 300px [row4] 400px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px[row10] 150px 200px [row11] 200px[row12] 200px[row13] 200px [row14] 200px [row15] 300px [lastRow];
+
+  grid-template-areas:
+    /* 1 */
+    ". . . . "
+    /* 2 */ "year  desc desc . "
+    /* 3 */ " year1 desc1 desc1 me "
+    /* 4 */ " year2 gimiregen . desc2 "
+    /* 5 */ " year3 desc3 desc3 desc2 "
+    /* 6 */ "year4 desc5 desc5 desc4 "
+    /* 7 */ " year5 oyster . desc6  "
+    /* 8 */ " year6 oyster . desc6  "
+    /* 9 */ ".  zugspitze zugspitze zugspitze"
+    /* 10 */ "matterhorn matterhorn year8  . "
+    /* 11 */ " year9 desc9 desc9 ."
+    /* 12 */ " year11 year11 . . "
+    /* 13 */ " corsica corsica corsica corsica "
+    /* 14 */ "year13 desc8 desc8  me2 "
+    /* 15*/ " year14 desc14 desc14 me2 ";
+
+  overflow: hidden;
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  #me {
+    grid-area: me;
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    transform: translate(0%, 40%);
+    border: lavenderblush 4px solid;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .year {
+    grid-area: year;
+    @include year;
+  }
+
+  .expCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    grid-area: desc;
+    color: #000000;
+
+    @include CVtextStyle;
+  }
+
+  .year.one {
+    grid-area: year1;
+  }
+
+  .expCard.one {
+    grid-area: desc1;
+  }
+
+  .year.two {
+    grid-area: year2;
+  }
+
+  .expCard.two {
+    grid-area: desc2;
+  }
+
+  #gimiregen {
+    width: 600px;
+    border-radius: 4px;
+    grid-area: gimiregen;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .year.three {
+    grid-area: year3;
+  }
+
+  .expCard.three {
+    grid-area: desc3;
+  }
+
+  #circleLeft {
+    position: fixed;
+    z-index: -1;
+  }
+
+  .year.four {
+    grid-area: year4;
+  }
+
+  .expCard.four {
+    grid-area: desc4;
+    color: $red;
+  }
+
+  .year.five {
+    grid-area: year5;
+  }
+
+  .expCard.five {
+    grid-area: desc5;
+  }
+
+  .expCard.six {
+    transform: translate(-20%, 0%);
+    grid-area: desc6;
+  }
+
+  #oyster {
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    grid-area: oyster;
+    align-self: center;
+    border-radius: 50%;
+    margin-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .year.six {
+    margin: auto;
+    grid-area: year6;
+  }
+
+  #zugspitze {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: zugspitze;
+
+    width: 100%;
+    border-radius: 4px;
+    background-image: url("./pictures/zugspitze.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    .year.seven {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 100px;
+      grid-area: year7;
+      z-index: 2;
+    }
+
+    .expCard.seven {
+      position: relative;
+      grid-area: desc7;
+      width: 98%;
+      @include CVtextStyle;
+      z-index: 2;
+      background: rgba(
+        255,
+        255,
+        255,
+        0.1
+      ); // Make sure this color has an opacity of less than 1
+      backdrop-filter: blur(4px);
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+
+  #matterhorn {
+    border-radius: 50%;
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 60px;
+    grid-area: matterhorn;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .expCard.eight {
+    margin-top: 160px;
+    margin-left: 10px;
+    grid-area: desc8;
+    @include CVtextStyle;
+  }
+
+  .year.nine {
+    @include year;
+    grid-area: year9;
+  }
+
+  .expCard.nine {
+    margin-top: 150px;
+    grid-area: desc9;
+    @include CVtextStyle;
+    color: #ffffff;
+  }
+
+  #corsica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: corsica;
+
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("./pictures/Corsica.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    .year.eleven {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      color: #5a5a5a;
+      font-size: 100px;
+      grid-area: year11;
+      z-index: 2;
+    }
+
+    .expCard.eleven {
+      position: relative;
+      grid-area: desc11;
+      width: 98%;
+      font-size: 30px;
+      color: #000000;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+
+  .year.thirteen {
+    @include year;
+    grid-area: year13;
+  }
+
+  .year.fourteen {
+    @include year;
+    color: $red;
+    margin-top: 160px;
+    font-size: 20vh;
+    grid-area: year14;
+  }
+
+  .expCard.fourteen {
+    grid-area: desc14;
+  }
+
+  #me2 {
+    grid-area: me2;
+    width: 400px;
+    align-self: center;
+    border-radius: 50%;
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: 600px) {
+    img#rock {
+      display: none;
+    }
+
+    .expBack {
+      display: grid;
+      grid-template-columns: [line1] 30% [line2] 40% [lastLine];
+      grid-template-rows: [row1] 200px [row2] 100px [row3] 100px [row4] 400px [row5] 100px [row6] 100px [row7] 100px [row8] 100px [row9] 100px[row10] 150px[row11] 100px [row12] 150px [row13] 200px[row14] 100px[row15] 150px [row16] 400px [row17] 100px [row18] 150px [row19] 300px [row20] 20px [row21] 20px [row22] 200px [row23] 200px [row24] 200px [row25] 100px[row26] 150px[row27] 100px [row28] 150px [row29] 50px[row30] 50px[row31] 200px [row32] 100px [row33] 200px [row34] 100px[row35]150px [row36] 100px [row37] 150px [row38] 100px[lastRow];
+
+      grid-template-areas:
+        /* 1 */
+        "call call call"
+        /* 2 */ "year year . "
+        /* 3 */ "desc desc desc"
+        /* 4 */ "me me me"
+        /* 5 */ "year1 year1 ."
+        /* 6 */ "desc1 desc1 desc1"
+        /* 7 */ "year2 year2 ."
+        /* 8 */ "desc2 desc2 desc2"
+        /* 9 */ "year3 year3 ."
+        /* 10 */ "desc3 desc3 desc3"
+        /* 11 */ "year4 year4 . "
+        /* 12 */ "desc4 desc4 desc4"
+        /* 13 */ "gundel gundel gundel"
+        /* 14 */ "year5 year5 . "
+        /* 15 */ "desc5 desc5 desc5"
+        /* 16 */ "oyster oyster oyster"
+        /* 17 */ "year6 year6 ."
+        /* 18 */ "desc6 desc6 desc6"
+        /* 19 */ "zugspitze zugspitze zugspitze"
+        /* 20 */ "year7 year7 ."
+        /* 21 */ "desc7 desc7 desc7"
+        /* 22 */ "matterhorn matterhorn matterhorn "
+        /* 23 */ "year8 year8 ."
+        /* 24 */ "desc8 desc8 desc8"
+        /* 25 */ "year9 year9 ."
+        /* 26 */ "desc9 desc9 desc9"
+        /* 27 */ "year10 year10 ."
+        /* 28 */ "desc10 desc10 desc10"
+        /* 29 */ "year11 year11 ."
+        /* 30 */ "desc11 desc11 desc11"
+        /* 31 */ "corsica corsica corsica"
+        /* 32 */ "year12 year12 ."
+        /* 33 */ "desc12 desc12 desc12"
+        /* 34 */ "year13 year13 ."
+        /* 35 */ "desc13 desc13 desc13"
+        /* 36 */ "me2 me2 me2"
+        /* 37 */ "year14 year14 year14"
+        /* 38 */ "desc14 desc14 desc14";
+
+      width: 100%;
+      height: fit-content + 200px;
+
+      background-color: rgb(255, 248, 233);
+      padding-left: 20px;
+      padding-bottom: 200px;
+      box-sizing: border-box;
+
+      .year {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        font-size: 50px;
+        width: 100%;
+      }
+
+      .expCard {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        font-size: 20px;
+        width: 100%;
+      }
+
+      #oyster {
+        width: 300px;
+      }
+
+      #me2 {
+        width: 300px;
+      }
+
+      #zugspitze {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-area: zugspitze;
+
+        max-width: 400px;
+        border-radius: 4px 4px 4px 4px;
+        background-image: url("./pictures/zugspitze.jpg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: cover;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        .year.seven {
+          position: relative;
+          margin: 0;
+          margin-left: 20px;
+          padding: 0px;
+          font-size: 50px;
+          grid-area: year7;
+          z-index: 2;
+        }
+
+        .expCard.seven {
+          position: relative;
+          grid-area: desc7;
+          width: 100%;
+          font-size: 20px;
+          margin: 0;
+          color: #000000;
+          z-index: 2;
+          background: rgba(
+            255,
+            255,
+            255,
+            0.1
+          ); // Make sure this color has an opacity of less than 1
+          backdrop-filter: blur(4px);
+          border-radius: 4px 4px 4px 4px;
+        }
+      }
+
+      #matterhorn {
+        padding: 20px;
+        margin: 0;
+      }
+
+      #corsica {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        grid-area: corsica;
+
+        width: 400px;
+        margin-left: -20px;
+        border-radius: 4px 4px 4px 4px;
+        background-image: url("./pictures/Corsica.jpg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-size: cover;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        .year.eleven {
+          border-left: 20px;
+          margin: 0;
+          padding: 0;
+          color: #ffffff;
+          font-size: 50px;
+          grid-area: year11;
+          z-index: 2;
+        }
+
+        .expCard.eleven {
+          grid-area: desc11;
+          width: 98%;
+          font-size: 20px;
+          color: #ffffff;
+          z-index: 2;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(4px);
+          border-radius: 4px 4px 4px 4px;
+        }
+      }
+    }
+  }
+}
+//project
+.project {
+  @include page;
+  background-color: aliceblue;
+}
+//contact
+.contact {
+  @include page;
+  background-color: mintcream;
+}

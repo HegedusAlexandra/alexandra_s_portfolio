@@ -1,0 +1,1105 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;400;800&family=Nova+Mono&family=Xanh+Mono&display=swap");
+.bend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 120vh;
+  -webkit-transform: rotate(-15deg) translate(35%, -20%);
+          transform: rotate(-15deg) translate(35%, -20%);
+  -webkit-animation: closeMenu ease 2s;
+          animation: closeMenu ease 2s;
+}
+
+.bend .greenSquare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 10%;
+  height: 100vh;
+  background: linear-gradient(14deg, #b5d7b6 10%, #6ebad4 60%);
+  border-radius: 10px;
+  -webkit-transform: translate(40%, 0%);
+          transform: translate(40%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-animation: openCol1rev ease 1s;
+          animation: openCol1rev ease 1s;
+}
+
+.bend .greenSquare p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 8vh;
+  -webkit-transform: rotateZ(90deg) translate(-50%, 0%);
+          transform: rotateZ(90deg) translate(-50%, 0%);
+  margin: 0px;
+  padding-top: 30px;
+  font-family: "Nova Mono", monospace;
+  text-transform: uppercase;
+  text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.628);
+}
+
+.bend .blueSquare {
+  width: 14%;
+  height: 160vh;
+  background: linear-gradient(14deg, #6ebad4 10%, #bf3939 100%);
+  border-radius: 10px;
+  -webkit-transform: translate(10%, 0%);
+          transform: translate(10%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-animation: openCol2rev ease 1s;
+          animation: openCol2rev ease 1s;
+}
+
+.bend .redSquare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 40%;
+  height: 80vh;
+  background: linear-gradient(14deg, #bf3939 10%, #b5d7b6 100%);
+  border-radius: 10px;
+  -webkit-transform: translate(-10%, 0%);
+          transform: translate(-10%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-animation: openCol3rev ease 1s;
+          animation: openCol3rev ease 1s;
+}
+
+.bend .redSquare #menuButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #75c1da;
+  font-size: x-large;
+  color: white;
+  font-weight: 800;
+  font-family: "Azeret Mono", monospace;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+          box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+  text-shadow: 2px 2px 2px black;
+}
+
+.bend .redSquare #menuButton:hover {
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+          box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+  color: #fafafa;
+  text-shadow: -0.5px -0.5px 2px rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+}
+
+.bendOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 120vh;
+  -webkit-transform: rotate(0deg) translate(20%, -10%);
+          transform: rotate(0deg) translate(20%, -10%);
+  -webkit-animation: openMenu ease 2s;
+          animation: openMenu ease 2s;
+}
+
+.bendOpen .greenSquare {
+  width: 12%;
+  height: 22vh;
+  background: linear-gradient(14deg, #b5d7b6 10%, #6ebad4 60%);
+  border-radius: 10px;
+  -webkit-transform: translate(40%, 0%);
+          transform: translate(40%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-animation: openCol1 ease 1s;
+          animation: openCol1 ease 1s;
+}
+
+.bendOpen .blueSquare {
+  width: 16%;
+  height: 120vh;
+  background: linear-gradient(14deg, #6ebad4 10%, #bf3939 100%);
+  border-radius: 10px;
+  -webkit-transform: translate(10%, 0%);
+          transform: translate(10%, 0%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-animation: openCol2 ease 1s;
+          animation: openCol2 ease 1s;
+}
+
+.bendOpen .redSquare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 40%;
+  height: 90vh;
+  background: linear-gradient(14deg, #bf3939 10%, #b5d7b6 100%);
+  border-radius: 10px;
+  -webkit-transform: translate(-10%, 10%);
+          transform: translate(-10%, 10%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-animation: openCol3 ease 1s;
+          animation: openCol3 ease 1s;
+}
+
+.bendOpen .redSquare .linkBox {
+  margin-left: 4%;
+  margin-top: 10vh;
+}
+
+.bendOpen .redSquare .linkBox p {
+  font-family: "Nova Mono", monospace;
+  color: black;
+  font-size: 1.5vh;
+  cursor: pointer;
+}
+
+.bendOpen .redSquare .linkBox a {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  margin-left: 60px;
+  font-family: "Azeret Mono", monospace;
+  font-size: 5vh;
+  color: aliceblue;
+  text-shadow: 1px 2px 2px black, -1px -2px 2px black;
+}
+
+.bendOpen .redSquare #menuButton {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #bf3939;
+  font-size: x-large;
+  color: white;
+  font-weight: 800;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+          box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+  text-shadow: 2px 2px 2px black;
+}
+
+.bendOpen .redSquare #menuButton:hover {
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+          box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+  color: #fafafa;
+  text-shadow: -0.5px -0.5px 2px rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+}
+
+@-webkit-keyframes openMenu {
+  0% {
+    -webkit-transform: rotate(-15deg) translate(35%, -20%);
+            transform: rotate(-15deg) translate(35%, -20%);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(20%, -10%);
+            transform: rotate(0deg) translate(20%, -10%);
+    z-index: 4;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    -webkit-transform: rotate(-15deg) translate(35%, -20%);
+            transform: rotate(-15deg) translate(35%, -20%);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(20%, -10%);
+            transform: rotate(0deg) translate(20%, -10%);
+    z-index: 4;
+  }
+}
+
+@-webkit-keyframes closeMenu {
+  0% {
+    -webkit-transform: rotate(0deg) translate(20%, -10%);
+            transform: rotate(0deg) translate(20%, -10%);
+    z-index: 4;
+  }
+  10% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-15deg) translate(35%, -20%);
+            transform: rotate(-15deg) translate(35%, -20%);
+    z-index: 1;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    -webkit-transform: rotate(0deg) translate(20%, -10%);
+            transform: rotate(0deg) translate(20%, -10%);
+    z-index: 4;
+  }
+  10% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-15deg) translate(35%, -20%);
+            transform: rotate(-15deg) translate(35%, -20%);
+    z-index: 1;
+  }
+}
+
+@-webkit-keyframes openCol1 {
+  0% {
+    width: 10%;
+    height: 100vh;
+  }
+  100% {
+    width: 12%;
+    height: 22vh;
+  }
+}
+
+@keyframes openCol1 {
+  0% {
+    width: 10%;
+    height: 100vh;
+  }
+  100% {
+    width: 12%;
+    height: 22vh;
+  }
+}
+
+@-webkit-keyframes openCol2 {
+  0% {
+    width: 14%;
+    height: 160vh;
+  }
+  100% {
+    width: 16%;
+    height: 120vh;
+  }
+}
+
+@keyframes openCol2 {
+  0% {
+    width: 14%;
+    height: 160vh;
+  }
+  100% {
+    width: 16%;
+    height: 120vh;
+  }
+}
+
+@-webkit-keyframes openCol3 {
+  0% {
+    width: 40%;
+    height: 80vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 40%;
+    height: 90vh;
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes openCol3 {
+  0% {
+    width: 40%;
+    height: 80vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 40%;
+    height: 90vh;
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@-webkit-keyframes openCol1rev {
+  0% {
+    width: 12%;
+    height: 22vh;
+  }
+  100% {
+    width: 10%;
+    height: 100vh;
+  }
+}
+
+@keyframes openCol1rev {
+  0% {
+    width: 12%;
+    height: 22vh;
+  }
+  100% {
+    width: 10%;
+    height: 100vh;
+  }
+}
+
+@-webkit-keyframes openCol2rev {
+  0% {
+    width: 16%;
+    height: 120vh;
+  }
+  100% {
+    width: 14%;
+    height: 160vh;
+  }
+}
+
+@keyframes openCol2rev {
+  0% {
+    width: 16%;
+    height: 120vh;
+  }
+  100% {
+    width: 14%;
+    height: 160vh;
+  }
+}
+
+@-webkit-keyframes openCol3rev {
+  0% {
+    width: 40%;
+    height: 90vh;
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+  100% {
+    width: 40%;
+    height: 80vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3rev {
+  0% {
+    width: 40%;
+    height: 90vh;
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+  100% {
+    width: 40%;
+    height: 80vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #75c1da;
+  font-size: x-large;
+  color: white;
+  font-weight: 800;
+  font-family: "Azeret Mono", monospace;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+          box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+  text-shadow: 2px 2px 2px black;
+}
+
+.menu .bend {
+  position: absolute;
+}
+
+.about {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+  background-color: #6ebad4;
+  background-color: lavenderblush;
+  height: 6000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [line1] 300px [line2] 300px [line3] auto [line4] 400px [lastLine];
+      grid-template-columns: [line1] 300px [line2] 300px [line3] auto [line4] 400px [lastLine];
+  -ms-grid-rows: [row1] 100px [row2] 200px [row3] 300px [row4] 400px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px [row10] 150px 200px [row11] 200px [row12] 200px [row13] 200px [row14] 200px [row15] 300px [lastRow];
+      grid-template-rows: [row1] 100px [row2] 200px [row3] 300px [row4] 400px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px [row10] 150px 200px [row11] 200px [row12] 200px [row13] 200px [row14] 200px [row15] 300px [lastRow];
+      grid-template-areas: ". . . . " "year  desc desc . " " year1 desc1 desc1 me " " year2 gimiregen . desc2 " " year3 desc3 desc3 desc2 " "year4 desc5 desc5 desc4 " " year5 oyster . desc6  " " year6 oyster . desc6  " ".  zugspitze zugspitze zugspitze" "matterhorn matterhorn year8  . " " year9 desc9 desc9 ." " year11 year11 . . " " corsica corsica corsica corsica " "year13 desc8 desc8  me2 " " year14 desc14 desc14 me2 ";
+  overflow: hidden;
+}
+
+.about .reveal {
+  position: relative;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+}
+
+.about .reveal.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.about #me {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: me;
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  -webkit-transform: translate(0%, 40%);
+          transform: translate(0%, 40%);
+  border: lavenderblush 4px solid;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about .year {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: year;
+  padding-left: 6vh;
+  font-size: 10vh;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 800;
+  color: aliceblue;
+  text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+}
+
+.about .expCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc;
+  color: #000000;
+  font-family: "Nova Mono", monospace;
+  font-size: 3.5vh;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+}
+
+.about .year.one {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: year1;
+}
+
+.about .expCard.one {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc1;
+}
+
+.about .year.two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: year2;
+}
+
+.about .expCard.two {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: desc2;
+}
+
+.about #gimiregen {
+  width: 600px;
+  border-radius: 4px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: gimiregen;
+  margin-top: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about .year.three {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: year3;
+}
+
+.about .expCard.three {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc3;
+}
+
+.about #circleLeft {
+  position: fixed;
+  z-index: -1;
+}
+
+.about .year.four {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: year4;
+}
+
+.about .expCard.four {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: desc4;
+  color: #bf3939;
+}
+
+.about .year.five {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: year5;
+}
+
+.about .expCard.five {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc5;
+}
+
+.about .expCard.six {
+  -webkit-transform: translate(-20%, 0%);
+          transform: translate(-20%, 0%);
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: desc6;
+}
+
+.about #oyster {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: oyster;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 50%;
+  margin-left: 40px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about .year.six {
+  margin: auto;
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: year6;
+}
+
+.about #zugspitze {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: zugspitze;
+  width: 100%;
+  border-radius: 4px;
+  background-image: url("./pictures/zugspitze.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about #zugspitze .year.seven {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
+  grid-area: year7;
+  z-index: 2;
+}
+
+.about #zugspitze .expCard.seven {
+  position: relative;
+  grid-area: desc7;
+  width: 98%;
+  font-family: "Nova Mono", monospace;
+  font-size: 3.5vh;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 4px 4px 4px 4px;
+}
+
+.about #matterhorn {
+  border-radius: 50%;
+  width: 70%;
+  margin-top: 60px;
+  margin-left: 60px;
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: matterhorn;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about .expCard.eight {
+  margin-top: 160px;
+  margin-left: 10px;
+  -ms-grid-row: 14;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc8;
+  font-family: "Nova Mono", monospace;
+  font-size: 3.5vh;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+}
+
+.about .year.nine {
+  padding-left: 6vh;
+  font-size: 10vh;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 800;
+  color: aliceblue;
+  text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: year9;
+}
+
+.about .expCard.nine {
+  margin-top: 150px;
+  -ms-grid-row: 11;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc9;
+  font-family: "Nova Mono", monospace;
+  font-size: 3.5vh;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+  color: #ffffff;
+}
+
+.about #corsica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: corsica;
+  width: 100%;
+  border-radius: 4px 4px 4px 4px;
+  background-image: url("./pictures/Corsica.jpg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about #corsica .year.eleven {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #5a5a5a;
+  font-size: 100px;
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: year11;
+  z-index: 2;
+}
+
+.about #corsica .expCard.eleven {
+  position: relative;
+  grid-area: desc11;
+  width: 98%;
+  font-size: 30px;
+  color: #000000;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 4px 4px 4px 4px;
+}
+
+.about .year.thirteen {
+  padding-left: 6vh;
+  font-size: 10vh;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 800;
+  color: aliceblue;
+  text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  grid-area: year13;
+}
+
+.about .year.fourteen {
+  padding-left: 6vh;
+  font-size: 10vh;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 800;
+  color: aliceblue;
+  text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+  color: #bf3939;
+  margin-top: 160px;
+  font-size: 20vh;
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  grid-area: year14;
+}
+
+.about .expCard.fourteen {
+  -ms-grid-row: 15;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: desc14;
+}
+
+.about #me2 {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: me2;
+  width: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 50%;
+  margin-top: 60px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 600px) {
+  .about img#rock {
+    display: none;
+  }
+  .about .expBack {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: [line1] 30% [line2] 40% [lastLine];
+        grid-template-columns: [line1] 30% [line2] 40% [lastLine];
+    -ms-grid-rows: [row1] 200px [row2] 100px [row3] 100px [row4] 400px [row5] 100px [row6] 100px [row7] 100px [row8] 100px [row9] 100px [row10] 150px [row11] 100px [row12] 150px [row13] 200px [row14] 100px [row15] 150px [row16] 400px [row17] 100px [row18] 150px [row19] 300px [row20] 20px [row21] 20px [row22] 200px [row23] 200px [row24] 200px [row25] 100px [row26] 150px [row27] 100px [row28] 150px [row29] 50px [row30] 50px [row31] 200px [row32] 100px [row33] 200px [row34] 100px [row35] 150px [row36] 100px [row37] 150px [row38] 100px [lastRow];
+        grid-template-rows: [row1] 200px [row2] 100px [row3] 100px [row4] 400px [row5] 100px [row6] 100px [row7] 100px [row8] 100px [row9] 100px [row10] 150px [row11] 100px [row12] 150px [row13] 200px [row14] 100px [row15] 150px [row16] 400px [row17] 100px [row18] 150px [row19] 300px [row20] 20px [row21] 20px [row22] 200px [row23] 200px [row24] 200px [row25] 100px [row26] 150px [row27] 100px [row28] 150px [row29] 50px [row30] 50px [row31] 200px [row32] 100px [row33] 200px [row34] 100px [row35] 150px [row36] 100px [row37] 150px [row38] 100px [lastRow];
+        grid-template-areas: "call call call" "year year . " "desc desc desc" "me me me" "year1 year1 ." "desc1 desc1 desc1" "year2 year2 ." "desc2 desc2 desc2" "year3 year3 ." "desc3 desc3 desc3" "year4 year4 . " "desc4 desc4 desc4" "gundel gundel gundel" "year5 year5 . " "desc5 desc5 desc5" "oyster oyster oyster" "year6 year6 ." "desc6 desc6 desc6" "zugspitze zugspitze zugspitze" "year7 year7 ." "desc7 desc7 desc7" "matterhorn matterhorn matterhorn " "year8 year8 ." "desc8 desc8 desc8" "year9 year9 ." "desc9 desc9 desc9" "year10 year10 ." "desc10 desc10 desc10" "year11 year11 ." "desc11 desc11 desc11" "corsica corsica corsica" "year12 year12 ." "desc12 desc12 desc12" "year13 year13 ." "desc13 desc13 desc13" "me2 me2 me2" "year14 year14 year14" "desc14 desc14 desc14";
+    width: 100%;
+    height: fit-content200px;
+    background-color: #fff8e9;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .about .expBack .year {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 50px;
+    width: 100%;
+  }
+  .about .expBack .expCard {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .about .expBack #oyster {
+    width: 300px;
+  }
+  .about .expBack #me2 {
+    width: 300px;
+  }
+  .about .expBack #zugspitze {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 19;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: zugspitze;
+    max-width: 400px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("./pictures/zugspitze.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .about .expBack #zugspitze .year.seven {
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0px;
+    font-size: 50px;
+    -ms-grid-row: 20;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: year7;
+    z-index: 2;
+  }
+  .about .expBack #zugspitze .expCard.seven {
+    position: relative;
+    -ms-grid-row: 21;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: desc7;
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 4px 4px 4px 4px;
+  }
+  .about .expBack #matterhorn {
+    padding: 20px;
+    margin: 0;
+  }
+  .about .expBack #corsica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-grid-row: 31;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: corsica;
+    width: 400px;
+    margin-left: -20px;
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("./pictures/Corsica.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: cover;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .about .expBack #corsica .year.eleven {
+    border-left: 20px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 50px;
+    -ms-grid-row: 29;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: year11;
+    z-index: 2;
+  }
+  .about .expBack #corsica .expCard.eleven {
+    -ms-grid-row: 30;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: desc11;
+    width: 98%;
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 4px 4px 4px 4px;
+  }
+}
+
+.project {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+  background-color: #6ebad4;
+  background-color: aliceblue;
+}
+
+.contact {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+  background-color: #6ebad4;
+  background-color: mintcream;
+}
+/*# sourceMappingURL=components.css.map */
