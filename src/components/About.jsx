@@ -64,7 +64,7 @@ export default function About() {
         <circle
           cx="10%"
           cy="50%"
-          r={visib < 2000 ? visib / 2 : 2000 - visib / 1.5}
+          r={visib < 2000 ? visib / 2 : 2600 - visib / 1.5}
           fill="#a83b3bd8"
         />
       </svg>
@@ -139,7 +139,14 @@ export default function About() {
         myself to study programming.
       </div>
       <img id="me2" src={me2} alt="me" />
-      {/* It may appear that I have moved around quite a lot however this is perfectly normal in the restaurant business where people move to gain knowledge and experience */}
+      <p className="year fifteen reveal">2023</p>
+      <div className="expCard fifteen">
+        Here we are ,I have finished in Codecool the frontend developer
+        education where I studied about
+        JavaScript,CSS,SCSS,HTML,React,Docker,Node.js and than headed to learn
+        some PHP and SQL,that was love for the first sight. :) Since I am
+        continously craving for new challenges.
+      </div>
     </div>
   );
 }
