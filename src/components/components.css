@@ -177,7 +177,7 @@
 
 .bendOpen .blueSquare {
   width: 16%;
-  height: 120vh;
+  height: 90vh;
   background: linear-gradient(14deg, #6ebad4 10%, #bf3939 100%);
   border-radius: 10px;
   -webkit-transform: translate(10%, 0%);
@@ -206,8 +206,8 @@
   height: 90vh;
   background: linear-gradient(14deg, #bf3939 10%, #b5d7b6 100%);
   border-radius: 10px;
-  -webkit-transform: translate(-10%, 10%);
-          transform: translate(-10%, 10%);
+  -webkit-transform: translate(-10%, 6%);
+          transform: translate(-10%, 6%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol3 ease 1s;
@@ -362,7 +362,7 @@
   }
   100% {
     width: 16%;
-    height: 120vh;
+    height: 90vh;
   }
 }
 
@@ -373,7 +373,7 @@
   }
   100% {
     width: 16%;
-    height: 120vh;
+    height: 90vh;
   }
 }
 
@@ -387,8 +387,8 @@
   100% {
     width: 40%;
     height: 90vh;
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
+    -webkit-transform: translate(-10%, 6%);
+            transform: translate(-10%, 6%);
   }
 }
 
@@ -402,8 +402,8 @@
   100% {
     width: 40%;
     height: 90vh;
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
+    -webkit-transform: translate(-10%, 6%);
+            transform: translate(-10%, 6%);
   }
 }
 
@@ -957,7 +957,7 @@
   height: 2000px;
   overflow: hidden;
   background-color: #6ebad4;
-  background-color: white;
+  background-color: #6ebad4;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -981,7 +981,7 @@
   height: 90vh;
   width: 40vw;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: 2vh;
@@ -989,14 +989,11 @@
   padding: 2vh;
 }
 
-.project .imgContainer .imgBox img,
-.project .imgContainer .imgBox iframe {
+.project .imgContainer .imgBox img {
   overflow: hidden;
   width: 100%;
   height: 76vh;
   border-radius: 12px;
-  padding: 1vh;
-  background-color: rgba(0, 0, 0, 0.813);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -1037,7 +1034,7 @@
           justify-content: center;
   --b: 4px;
   /* border thickness */
-  --c: #0000 25%, darkblue 0;
+  --c: #0000 25%, rgb(106, 121, 179) 0;
   /* define the color here */
   padding: 12px;
   background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--c)) 0 0, conic-gradient(from 180deg at top var(--b) right var(--b), var(--c)) 100% 0, conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--c)) 0 100%, conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--c)) 100% 100%;
@@ -1067,8 +1064,6 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
   border-radius: 4px;
   padding-left: 10px;
-  -webkit-box-shadow: 2px 2px 6px black, -1px -1px 6px rgba(255, 255, 255, 0.527);
-          box-shadow: 2px 2px 6px black, -1px -1px 6px rgba(255, 255, 255, 0.527);
 }
 
 .contact {

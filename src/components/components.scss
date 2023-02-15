@@ -167,7 +167,7 @@ $font3: "Xanh Mono", monospace;
   }
   .blueSquare {
     width: 16%;
-    height: 120vh;
+    height: 90vh;
     background: linear-gradient(14deg, $blue 10%, $red 100%);
 
     border-radius: 10px;
@@ -187,7 +187,7 @@ $font3: "Xanh Mono", monospace;
     height: 90vh;
     background: linear-gradient(14deg, $red 10%, $green 100%);
     border-radius: 10px;
-    transform: translate(-10%, 10%);
+    transform: translate(-10%, 6%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -291,7 +291,7 @@ $font3: "Xanh Mono", monospace;
   }
   100% {
     width: 16%;
-    height: 120vh;
+    height: 90vh;
   }
 }
 @keyframes openCol3 {
@@ -303,7 +303,7 @@ $font3: "Xanh Mono", monospace;
   100% {
     width: 40%;
     height: 90vh;
-    transform: translate(-10%, 10%);
+    transform: translate(-10%, 6%);
   }
 }
 
@@ -657,7 +657,7 @@ $font3: "Xanh Mono", monospace;
 //project
 .project {
   @include page;
-  background-color: rgb(255, 255, 255);
+  background-color: $blue;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -675,7 +675,7 @@ $font3: "Xanh Mono", monospace;
 
       border-radius: 4px;
 
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.5);
       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -687,8 +687,7 @@ $font3: "Xanh Mono", monospace;
         width: 100%;
         height: 76vh;
         border-radius: 12px;
-        padding: 1vh;
-        background-color: rgba(0, 0, 0, 0.813);
+
         box-sizing: border-box;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -700,7 +699,7 @@ $font3: "Xanh Mono", monospace;
         justify-content: center;
 
         --b: 4px; /* border thickness */
-        --c: #0000 25%, darkblue 0; /* define the color here */
+        --c: #0000 25%, rgb(106, 121, 179) 0; /* define the color here */
         padding: 12px;
         background: conic-gradient(
               from 90deg at top var(--b) left var(--b),
@@ -734,8 +733,6 @@ $font3: "Xanh Mono", monospace;
         @include CVtextStyle;
         border-radius: 4px;
         padding-left: 10px;
-        box-shadow: 2px 2px 6px rgb(0, 0, 0),
-          -1px -1px 6px rgba(255, 255, 255, 0.527);
       }
     }
   }
