@@ -682,9 +682,10 @@ $font3: "Xanh Mono", monospace;
       margin: 2vh;
       margin-left: 10vh;
       padding: 2vh;
+
       img {
         overflow: hidden;
-        width: 100%;
+        width: fit-content;
         height: 76vh;
         border-radius: 12px;
 

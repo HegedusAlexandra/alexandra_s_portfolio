@@ -991,7 +991,9 @@
 
 .project .imgContainer .imgBox img {
   overflow: hidden;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 76vh;
   border-radius: 12px;
   -webkit-box-sizing: border-box;

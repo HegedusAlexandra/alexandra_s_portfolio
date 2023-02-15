@@ -6,6 +6,7 @@ import "./components.css";
 
 import OMAS from "./pictures/OMAS.gif";
 import CV from "./pictures/CV.gif";
+import GAMES from "./pictures/GAMES.png";
 import { useHorizontalScroll } from "./HorizontalScroll";
 
 export default function Projects() {
@@ -16,8 +17,8 @@ export default function Projects() {
       <Scroll />
       <div className="imgContainer" style={{ whiteSpace: "nowrap" }}>
         <div className="imgBox">
-          <img src={OMAS} alt="oops :( somthing went wrong" />
-          <a href="https://hegedusalexandra.github.io/OMASKLEIDERSCHRANK/">
+          <img src={GAMES} alt="oops :( somthing went wrong" />
+          <a href="https://hegedusalexandra.github.io/small_projects/">
             Check it out!
           </a>
           <h2 className="description">kk</h2>
