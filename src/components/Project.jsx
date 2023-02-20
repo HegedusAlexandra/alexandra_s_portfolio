@@ -6,7 +6,7 @@ import "./components.css";
 
 import OMAS from "./pictures/OMAS.gif";
 import CV from "./pictures/CV.gif";
-import GAMES from "./pictures/GAMES.png";
+import GAMES from "./pictures/GAMES.gif";
 import { useHorizontalScroll } from "./HorizontalScroll";
 
 export default function Projects() {
@@ -19,20 +19,6 @@ export default function Projects() {
         <div className="imgBox">
           <img src={GAMES} alt="oops :( somthing went wrong" />
           <a href="https://hegedusalexandra.github.io/small_projects/">
-            Check it out!
-          </a>
-          <h2 className="description">kk</h2>
-        </div>
-        <div className="imgBox">
-          <img src={CV} alt="oops :( somthing went wrong" />
-          <a href="https://hegedusalexandra.github.io/CurriculumVITAE/">
-            Check it out!
-          </a>
-          <h2 className="description">hhh</h2>
-        </div>
-        <div className="imgBox">
-          <img src={OMAS} alt="oops :( somthing went wrong" />
-          <a href="https://hegedusalexandra.github.io/OMASKLEIDERSCHRANK/">
             Check it out!
           </a>
           <h2 className="description">kk</h2>
