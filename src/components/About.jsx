@@ -7,7 +7,6 @@ import gimiregen from "./pictures/gimiregen.jpg";
 import oyster from "./pictures/oyster.png";
 import matterhorn from "./pictures/matterhorn.png";
 import me2 from "./pictures/Me.jpeg";
-import MyPDF from "./Hegedus.A.CV.docx";
 
 export default function About() {
   const [visib, setVisib] = useState(null);
