@@ -950,6 +950,46 @@
   grid-area: desc15;
 }
 
+.about #downloadCV {
+  position: absolute;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #75c1da;
+  font-size: x-large;
+  color: white;
+  font-weight: 800;
+  font-family: "Azeret Mono", monospace;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+          box-shadow: 2px 2px 4px black, -1px -1px 4px rgba(255, 255, 255, 0.527);
+  text-shadow: 2px 2px 2px black;
+}
+
+.about #downloadCV:hover {
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+          box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.795), inset -2px -2px 2px rgba(234, 233, 233, 0.804);
+  color: #fafafa;
+  text-shadow: -0.5px -0.5px 2px rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+}
+
 .project {
   position: absolute;
   z-index: 1;

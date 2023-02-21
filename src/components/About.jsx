@@ -7,6 +7,7 @@ import gimiregen from "./pictures/gimiregen.jpg";
 import oyster from "./pictures/oyster.png";
 import matterhorn from "./pictures/matterhorn.png";
 import me2 from "./pictures/Me.jpeg";
+import MyPDF from "./Hegedus.A.CV.docx";
 
 export default function About() {
   const [visib, setVisib] = useState(null);
@@ -55,6 +56,21 @@ export default function About() {
   }
 
   window.addEventListener("scroll", reveal);
+
+  function downloadDOCX() {
+    // using Java Script method to get PDF file
+    fetch("Hegedus.A.CV.docx").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Hegedus.A.CV.docx";
+        alink.click();
+      });
+    });
+  }
 
   return (
     <div className="about">
@@ -144,6 +160,9 @@ export default function About() {
         JavaScript,CSS,SCSS,HTML,React,Docker,Node.js Than I learnt PHP and SQL
         from Ruander. Currently I am working on developing my knowledge in these
         fields and want to learn also Angular.
+        <button id="downloadCV" onClick={downloadDOCX}>
+          CLICK TO DOWNLOAD CV
+        </button>
       </div>
     </div>
   );
