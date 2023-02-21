@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alexandra_s_portfolio/static/css/main.3b7f3f99.css",
-    "main.js": "/alexandra_s_portfolio/static/js/main.cd7fd150.js",
+    "main.js": "/alexandra_s_portfolio/static/js/main.7040bd7b.js",
     "static/js/787.76f235eb.chunk.js": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js",
     "static/media/telephone.png": "/alexandra_s_portfolio/static/media/telephone.95f89e4a454a3e115402.png",
     "static/media/Corsica.jpg": "/alexandra_s_portfolio/static/media/Corsica.20be2979d4223f6a9535.jpg",
@@ -12,16 +12,15 @@
     "static/media/matterhorn.png": "/alexandra_s_portfolio/static/media/matterhorn.7ef85d0cfa6c32654137.png",
     "static/media/Me.jpeg": "/alexandra_s_portfolio/static/media/Me.e88a1202e6c90e3e2531.jpeg",
     "static/media/gimiregen.jpg": "/alexandra_s_portfolio/static/media/gimiregen.badf83f17422232984db.jpg",
-    "static/media/Hegedus.A.CV.docx": "/alexandra_s_portfolio/static/media/Hegedus.A.CV.8ffccaccfd5a7502545f.docx",
     "static/media/zugspitze.jpg": "/alexandra_s_portfolio/static/media/zugspitze.f76b0af9460ad32a6cf5.jpg",
     "static/media/Én.jpg": "/alexandra_s_portfolio/static/media/Én.064ba11877c926f9b7fe.jpg",
     "index.html": "/alexandra_s_portfolio/index.html",
     "main.3b7f3f99.css.map": "/alexandra_s_portfolio/static/css/main.3b7f3f99.css.map",
-    "main.cd7fd150.js.map": "/alexandra_s_portfolio/static/js/main.cd7fd150.js.map",
+    "main.7040bd7b.js.map": "/alexandra_s_portfolio/static/js/main.7040bd7b.js.map",
     "787.76f235eb.chunk.js.map": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b7f3f99.css",
-    "static/js/main.cd7fd150.js"
+    "static/js/main.7040bd7b.js"
   ]
 }
