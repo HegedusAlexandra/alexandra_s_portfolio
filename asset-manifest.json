@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alexandra_s_portfolio/static/css/main.036b2635.css",
-    "main.js": "/alexandra_s_portfolio/static/js/main.8915ca5b.js",
+    "main.js": "/alexandra_s_portfolio/static/js/main.a5957b6e.js",
     "static/js/787.76f235eb.chunk.js": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js",
     "static/media/telephone.png": "/alexandra_s_portfolio/static/media/telephone.95f89e4a454a3e115402.png",
     "static/media/Corsica.jpg": "/alexandra_s_portfolio/static/media/Corsica.20be2979d4223f6a9535.jpg",
@@ -16,11 +16,11 @@
     "static/media/Én.jpg": "/alexandra_s_portfolio/static/media/Én.064ba11877c926f9b7fe.jpg",
     "index.html": "/alexandra_s_portfolio/index.html",
     "main.036b2635.css.map": "/alexandra_s_portfolio/static/css/main.036b2635.css.map",
-    "main.8915ca5b.js.map": "/alexandra_s_portfolio/static/js/main.8915ca5b.js.map",
+    "main.a5957b6e.js.map": "/alexandra_s_portfolio/static/js/main.a5957b6e.js.map",
     "787.76f235eb.chunk.js.map": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.036b2635.css",
-    "static/js/main.8915ca5b.js"
+    "static/js/main.a5957b6e.js"
   ]
 }
