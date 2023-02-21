@@ -78,7 +78,7 @@ $font3: "Xanh Mono", monospace;
     background: linear-gradient(14deg, $green 10%, $blue 60%);
 
     border-radius: 10px;
-    transform: translate(40%, 0%);
+    transform: translate(100%, 0%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -98,12 +98,12 @@ $font3: "Xanh Mono", monospace;
     }
   }
   .blueSquare {
-    width: 14%;
+    width: 20%;
     height: 160vh;
     background: linear-gradient(14deg, $blue 10%, $red 100%);
 
     border-radius: 10px;
-    transform: translate(10%, 0%);
+    transform: translate(45%, 0%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -159,19 +159,19 @@ $font3: "Xanh Mono", monospace;
     background: linear-gradient(14deg, $green 10%, $blue 60%);
 
     border-radius: 10px;
-    transform: translate(40%, 0%);
+    transform: translate(100%, 0%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: openCol1 ease 1s;
   }
   .blueSquare {
-    width: 16%;
-    height: 90vh;
+    width: 20%;
+    height: 40vh;
     background: linear-gradient(14deg, $blue 10%, $red 100%);
 
     border-radius: 10px;
-    transform: translate(10%, 0%);
+    transform: translate(40%, 0%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -286,12 +286,12 @@ $font3: "Xanh Mono", monospace;
 }
 @keyframes openCol2 {
   0% {
-    width: 14%;
+    width: 20%;
     height: 160vh;
   }
   100% {
-    width: 16%;
-    height: 90vh;
+    width: 20%;
+    height: 40vh;
   }
 }
 @keyframes openCol3 {
@@ -319,11 +319,11 @@ $font3: "Xanh Mono", monospace;
 }
 @keyframes openCol2rev {
   0% {
-    width: 16%;
-    height: 120vh;
+    width: 20%;
+    height: 40vh;
   }
   100% {
-    width: 14%;
+    width: 20%;
     height: 160vh;
   }
 }

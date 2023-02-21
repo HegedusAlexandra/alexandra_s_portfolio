@@ -37,8 +37,8 @@
   height: 100vh;
   background: linear-gradient(14deg, #b5d7b6 10%, #6ebad4 60%);
   border-radius: 10px;
-  -webkit-transform: translate(40%, 0%);
-          transform: translate(40%, 0%);
+  -webkit-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol1rev ease 1s;
@@ -66,12 +66,12 @@
 }
 
 .bend .blueSquare {
-  width: 14%;
+  width: 20%;
   height: 160vh;
   background: linear-gradient(14deg, #6ebad4 10%, #bf3939 100%);
   border-radius: 10px;
-  -webkit-transform: translate(10%, 0%);
-          transform: translate(10%, 0%);
+  -webkit-transform: translate(45%, 0%);
+          transform: translate(45%, 0%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol2rev ease 1s;
@@ -167,8 +167,8 @@
   height: 22vh;
   background: linear-gradient(14deg, #b5d7b6 10%, #6ebad4 60%);
   border-radius: 10px;
-  -webkit-transform: translate(40%, 0%);
-          transform: translate(40%, 0%);
+  -webkit-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol1 ease 1s;
@@ -176,12 +176,12 @@
 }
 
 .bendOpen .blueSquare {
-  width: 16%;
-  height: 90vh;
+  width: 20%;
+  height: 40vh;
   background: linear-gradient(14deg, #6ebad4 10%, #bf3939 100%);
   border-radius: 10px;
-  -webkit-transform: translate(10%, 0%);
-          transform: translate(10%, 0%);
+  -webkit-transform: translate(40%, 0%);
+          transform: translate(40%, 0%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol2 ease 1s;
@@ -357,23 +357,23 @@
 
 @-webkit-keyframes openCol2 {
   0% {
-    width: 14%;
+    width: 20%;
     height: 160vh;
   }
   100% {
-    width: 16%;
-    height: 90vh;
+    width: 20%;
+    height: 40vh;
   }
 }
 
 @keyframes openCol2 {
   0% {
-    width: 14%;
+    width: 20%;
     height: 160vh;
   }
   100% {
-    width: 16%;
-    height: 90vh;
+    width: 20%;
+    height: 40vh;
   }
 }
 
@@ -431,22 +431,22 @@
 
 @-webkit-keyframes openCol2rev {
   0% {
-    width: 16%;
-    height: 120vh;
+    width: 20%;
+    height: 40vh;
   }
   100% {
-    width: 14%;
+    width: 20%;
     height: 160vh;
   }
 }
 
 @keyframes openCol2rev {
   0% {
-    width: 16%;
-    height: 120vh;
+    width: 20%;
+    height: 40vh;
   }
   100% {
-    width: 14%;
+    width: 20%;
     height: 160vh;
   }
 }

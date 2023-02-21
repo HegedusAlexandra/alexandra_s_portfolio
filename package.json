@@ -2,7 +2,7 @@
   "name": "alexandra_s_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hegedusalexandra.github.io/alexandra_s_portfolio/",
+  "homepage": "https://hegedusalexandra.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

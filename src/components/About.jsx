@@ -58,7 +58,7 @@ export default function About() {
 
   return (
     <div className="about">
-      <Menu title={"Biography"} />
+      <Menu title={"CV"} />
       {visib > 300 && <Scroll />}
       <svg height="100vh" width="100%" id="circleLeft">
         <circle
@@ -90,12 +90,11 @@ export default function About() {
       <div className="expCard three reveal">
         {" "}
         In 2008 I completed my secondary education obtaining the highest
-        possible certificate in English and the ECDL certificate(basic
-        information sience and windows office knowledge).
+        possible certificate in English and the ECDL certificate.
       </div>
       <p className="year four reveal">2010</p>
       <div className="expCard four reveal">
-        In 2010 I commenced studies in Industrial Design Engineering .However
+        In 2010 I commenced studies in Industrial Design Engineering. However
         this was interrupted after 18 month due to family circumstances.
       </div>
       <p className="year five reveal">2012</p>
@@ -135,17 +134,16 @@ export default function About() {
       <p className="year thirteen reveal">2021</p>
       <p className="year fourteen reveal">2022</p>
       <div className="expCard fourteen reveal">
-        After receiving my vaccination I headed to Austria to be able to afford
-        myself to study programming.
+        After receiving my vaccination I headed to Austria to be able to fund my
+        programming studies.
       </div>
       <img id="me2" src={me2} alt="me" />
       <p className="year fifteen reveal">2023</p>
       <div className="expCard fifteen">
-        Here we are ,I have finished in Codecool the frontend developer
-        education where I studied about
-        JavaScript,CSS,SCSS,HTML,React,Docker,Node.js and than headed to learn
-        some PHP and SQL,that was love for the first sight. :) Since I am
-        continously craving for new challenges.
+        I finished my studies in Codecool,and gain knowledge with
+        JavaScript,CSS,SCSS,HTML,React,Docker,Node.js Than I learnt PHP and SQL
+        from Ruander. Currently I am working on developing my knowledge in these
+        fields and want to learn also Angular.
       </div>
     </div>
   );
