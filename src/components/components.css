@@ -753,8 +753,8 @@
   100% {
     height: 100vh;
     width: 40%;
-    -webkit-transform: translate(-10%, 0%);
-            transform: translate(-10%, 0%);
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
   }
 }
 
@@ -768,8 +768,8 @@
   100% {
     height: 100vh;
     width: 40%;
-    -webkit-transform: translate(-10%, 0%);
-            transform: translate(-10%, 0%);
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
   }
 }
 
@@ -1454,6 +1454,15 @@
   overflow: hidden;
 }
 
+@media screen and (max-device-width: 480px) {
+  .contact #menuContainer {
+    width: 98%;
+    height: 40vh;
+    -webkit-transform: translate(1%, 50%);
+            transform: translate(1%, 50%);
+  }
+}
+
 .contact #menuContainer p {
   font-family: "Nova Mono", monospace;
   color: black;
@@ -1461,6 +1470,12 @@
   padding-left: 4vh;
   cursor: pointer;
   margin-top: 10vh;
+}
+
+@media screen and (max-device-width: 480px) {
+  .contact #menuContainer p {
+    margin-top: 1vh;
+  }
 }
 
 .contact #menuContainer a,
@@ -1475,5 +1490,17 @@
   letter-spacing: 2px;
   color: aliceblue;
   text-shadow: 1px 2px 2px black, -1px -2px 2px black;
+}
+
+@media screen and (max-device-width: 480px) {
+  .contact #menuContainer a,
+  .contact #menuContainer h2 {
+    font-size: 4vw;
+    margin: 3vw;
+    font-family: "Azeret Mono", monospace;
+    letter-spacing: 0px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+  }
 }
 /*# sourceMappingURL=components.css.map */
