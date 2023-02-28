@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;400;800&family=Nova+Mono&family=Xanh+Mono&display=swap");
+@media screen and (max-width: 480px) {
+  .menu #menuContainer h1 {
+    font-size: 50px;
+    left: 10%;
+  }
+  .menu #menuContainer h2 {
+    top: 6%;
+    left: 10%;
+    font-size: x-large;
+  }
+  .bend {
+    -webkit-transform: translate(20%, -20%);
+            transform: translate(20%, -20%);
+    right: 40%;
+  }
+  .bendOpen .redSquare {
+    -webkit-transform: translate(140%, 6%);
+            transform: translate(140%, 6%);
+  }
+}
+
 .bend {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,6 +538,10 @@
 
 .menu .bend {
   position: absolute;
+}
+
+.menu .bendOpen {
+  position: static;
 }
 
 .about {
