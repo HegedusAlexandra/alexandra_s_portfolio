@@ -848,20 +848,26 @@ $font3: "Xanh Mono", monospace;
 .project {
   @include page;
   background-color: $blue;
-  height: 100vh;
+  height: fit-content;
   width: 100%;
-  overflow: hidden;
 
   .imgContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 
-    width: fit-content;
-    height: 90vh;
+    width: 100vw;
+    height: fit-content;
+    @media screen and (max-device-width: 480px) {
+      margin-top: 16vh;
+    }
 
     .imgBox {
-      height: 90vh;
-      width: 40vw;
+      height: 40vh;
+      width: 96vw;
+
+      display: flex;
+      flex-direction: row;
 
       border-radius: 4px;
 
@@ -870,27 +876,39 @@ $font3: "Xanh Mono", monospace;
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
       margin: 2vh;
-      margin-left: 10vh;
       padding: 2vh;
+      @media screen and (max-device-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+      }
 
       img {
         overflow: hidden;
         width: fit-content;
-        height: 76vh;
+        height: 40vh;
         border-radius: 12px;
 
         box-sizing: border-box;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        @media screen and (max-device-width: 480px) {
+          width: 96%;
+          height: fit-content;
+        }
       }
       a {
         all: unset;
+        position: relative;
+        z-index: 5;
         @include button;
         justify-content: center;
 
-        --b: 4px; /* border thickness */
-        --c: #0000 25%, rgb(106, 121, 179) 0; /* define the color here */
+        --b: 5px; /* border thickness */
+        --c: #0000 25%, rgb(0, 0, 0) 0; /* define the color here */
         padding: 12px;
         background: conic-gradient(
               from 90deg at top var(--b) left var(--b),
@@ -912,6 +930,9 @@ $font3: "Xanh Mono", monospace;
         cursor: pointer;
         box-shadow: 2px 2px 6px rgb(0, 0, 0),
           -1px -1px 6px rgba(255, 255, 255, 0.527);
+        @media screen and (max-device-width: 480px) {
+          z-index: 0;
+        }
       }
 
       a:hover {
