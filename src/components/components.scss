@@ -53,12 +53,14 @@ $font3: "Xanh Mono", monospace;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
   .menu {
     #menuContainer {
+      height: 100vh;
       h1 {
-        font-size: 50px;
+        font-size: 16vw;
         left: 10%;
+        top: 20%;
       }
 
       h2 {
@@ -66,17 +68,6 @@ $font3: "Xanh Mono", monospace;
         left: 10%;
         font-size: x-large;
       }
-    }
-  }
-
-  .bend {
-    transform: translate(20%, -20%);
-    right: 40%;
-  }
-
-  .bendOpen {
-    .redSquare {
-      transform: translate(140%, 6%);
     }
   }
 }
@@ -96,6 +87,13 @@ $font3: "Xanh Mono", monospace;
 
   animation: closeMenu ease 2s;
 
+  @media screen and (max-device-width: 480px) {
+    width: 100%;
+    height: 10vh;
+    transform: rotate(0deg) translate(0%, 0%);
+    animation: closeMenu-mobile ease 2s;
+  }
+
   .greenSquare {
     display: flex;
     justify-content: center;
@@ -110,7 +108,11 @@ $font3: "Xanh Mono", monospace;
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: openCol1rev ease 1s;
-
+    @media screen and (max-device-width: 480px) {
+      display: none;
+      height: 100vh;
+      border-radius: 0px;
+    }
     p {
       display: flex;
       justify-content: flex-end;
@@ -135,6 +137,12 @@ $font3: "Xanh Mono", monospace;
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: openCol2rev ease 1s;
+    @media screen and (max-device-width: 480px) {
+      display: none;
+      height: 100vh;
+      width: 10%;
+      border-radius: 0px;
+    }
   }
   .redSquare {
     display: flex;
@@ -149,7 +157,18 @@ $font3: "Xanh Mono", monospace;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    animation: openCol3rev ease 1s;
+    animation: openCol3rev ease 2s;
+
+    @media screen and (max-device-width: 480px) {
+      height: 10vh;
+      width: 100%;
+      transform: translate(0%, 0%);
+      border-radius: 0px;
+      animation: openCol3rev-mobile ease 2s;
+      background-image: url("./pictures/wave.gif");
+      background-size: cover;
+      overflow: hidden;
+    }
 
     #menuButton {
       @include button;
@@ -180,6 +199,11 @@ $font3: "Xanh Mono", monospace;
   transform: rotate(0deg) translate(20%, -10%);
   animation: openMenu ease 2s;
 
+  @media screen and (max-device-width: 480px) {
+    height: 100vh;
+    transform: translate(10%, 0%);
+    animation: openMenu-mobile ease 2s;
+  }
   .greenSquare {
     width: 12%;
     height: 22vh;
@@ -191,6 +215,9 @@ $font3: "Xanh Mono", monospace;
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: openCol1 ease 1s;
+    @media screen and (max-device-width: 480px) {
+      display: none;
+    }
   }
   .blueSquare {
     width: 20%;
@@ -203,6 +230,9 @@ $font3: "Xanh Mono", monospace;
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: openCol2 ease 1s;
+    @media screen and (max-device-width: 480px) {
+      display: none;
+    }
   }
   .redSquare {
     display: flex;
@@ -218,11 +248,26 @@ $font3: "Xanh Mono", monospace;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    animation: openCol3 ease 1s;
-
+    animation: openCol3 ease 2s;
+    @media screen and (max-device-width: 480px) {
+      width: 100%;
+      height: 100vh;
+      transform: translate(-10%, 0%);
+      animation: openCol3-mobile ease 2s;
+      background-image: url("./pictures/wave.gif");
+      background-size: cover;
+      overflow: hidden;
+    }
     .linkBox {
       margin-left: 4%;
       margin-top: 10vh;
+      @media screen and (max-device-width: 480px) {
+        margin-left: 0%;
+        padding: 4%;
+        background-color: #ffffff21;
+        backdrop-filter: blur(6px);
+        width: 100%;
+      }
       p {
         font-family: $font2;
         color: black;
@@ -287,6 +332,20 @@ $font3: "Xanh Mono", monospace;
   }
 }
 
+@keyframes openMenu-mobile {
+  0% {
+    transform: rotate(0deg) translate(10%, 0%);
+    z-index: 1;
+    height: 100vh;
+  }
+
+  100% {
+    transform: rotate(0deg) translate(10%, 0%);
+    z-index: 4;
+    height: 100vh;
+  }
+}
+
 @keyframes closeMenu {
   0% {
     transform: rotate(0deg) translate(20%, -10%);
@@ -298,6 +357,22 @@ $font3: "Xanh Mono", monospace;
   100% {
     transform: rotate(-15deg) translate(35%, -20%);
     z-index: 1;
+  }
+}
+
+@keyframes closeMenu-mobile {
+  0% {
+    transform: rotate(0deg) translate(10%, 0%);
+    z-index: 4;
+  }
+  10% {
+    z-index: 1;
+  }
+  100% {
+    transform: rotate(0deg) translate(10%, 0%);
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
   }
 }
 
@@ -334,6 +409,32 @@ $font3: "Xanh Mono", monospace;
   }
 }
 
+@keyframes openCol3-mobile {
+  0% {
+    width: 100%;
+    height: 10vh;
+    transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3-mobile-spec {
+  0% {
+    width: 40%;
+    height: 100vh;
+    transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    transform: translate(-10%, 0%);
+  }
+}
+
 @keyframes openCol1rev {
   0% {
     width: 12%;
@@ -366,6 +467,33 @@ $font3: "Xanh Mono", monospace;
     transform: translate(-10%, 0%);
   }
 }
+
+@keyframes openCol3rev-mobile {
+  0% {
+    width: 100%;
+    height: 100vh;
+    transform: translate(-10%, 0%);
+  }
+  100% {
+    height: 10vh;
+    width: 100%;
+    transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3rev-mobile-spec {
+  0% {
+    width: 100%;
+    height: 100vh;
+    transform: translate(-10%, 0%);
+  }
+  100% {
+    height: 100vh;
+    width: 40%;
+    transform: translate(-10%, 0%);
+  }
+}
+
 #scrollUp {
   position: fixed;
   bottom: 20px;
@@ -378,10 +506,27 @@ $font3: "Xanh Mono", monospace;
 .menu {
   .bend {
     position: absolute;
+    .redSquare {
+      @media screen and (max-device-width: 480px) {
+        height: 100vh;
+        width: 40%;
+        animation: openCol3rev-mobile-spec ease 2s;
+      }
+    }
   }
 
   .bendOpen {
     position: static;
+    @media screen and (max-device-width: 480px) {
+      position: fixed;
+    }
+    .redSquare {
+      @media screen and (max-device-width: 480px) {
+        height: 100vh;
+        width: 100%;
+        animation: openCol3-mobile-spec ease 2s;
+      }
+    }
   }
 }
 //about

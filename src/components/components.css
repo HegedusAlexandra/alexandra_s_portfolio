@@ -1,22 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;400;800&family=Nova+Mono&family=Xanh+Mono&display=swap");
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
+  .menu #menuContainer {
+    height: 100vh;
+  }
   .menu #menuContainer h1 {
-    font-size: 50px;
+    font-size: 16vw;
     left: 10%;
+    top: 20%;
   }
   .menu #menuContainer h2 {
     top: 6%;
     left: 10%;
     font-size: x-large;
-  }
-  .bend {
-    -webkit-transform: translate(20%, -20%);
-            transform: translate(20%, -20%);
-    right: 40%;
-  }
-  .bendOpen .redSquare {
-    -webkit-transform: translate(140%, 6%);
-            transform: translate(140%, 6%);
   }
 }
 
@@ -44,6 +39,17 @@
           animation: closeMenu ease 2s;
 }
 
+@media screen and (max-device-width: 480px) {
+  .bend {
+    width: 100%;
+    height: 10vh;
+    -webkit-transform: rotate(0deg) translate(0%, 0%);
+            transform: rotate(0deg) translate(0%, 0%);
+    -webkit-animation: closeMenu-mobile ease 2s;
+            animation: closeMenu-mobile ease 2s;
+  }
+}
+
 .bend .greenSquare {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +70,14 @@
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol1rev ease 1s;
           animation: openCol1rev ease 1s;
+}
+
+@media screen and (max-device-width: 480px) {
+  .bend .greenSquare {
+    display: none;
+    height: 100vh;
+    border-radius: 0px;
+  }
 }
 
 .bend .greenSquare p {
@@ -99,6 +113,15 @@
           animation: openCol2rev ease 1s;
 }
 
+@media screen and (max-device-width: 480px) {
+  .bend .blueSquare {
+    display: none;
+    height: 100vh;
+    width: 10%;
+    border-radius: 0px;
+  }
+}
+
 .bend .redSquare {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,8 +140,23 @@
           transform: translate(-10%, 0%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  -webkit-animation: openCol3rev ease 1s;
-          animation: openCol3rev ease 1s;
+  -webkit-animation: openCol3rev ease 2s;
+          animation: openCol3rev ease 2s;
+}
+
+@media screen and (max-device-width: 480px) {
+  .bend .redSquare {
+    height: 10vh;
+    width: 100%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    border-radius: 0px;
+    -webkit-animation: openCol3rev-mobile ease 2s;
+            animation: openCol3rev-mobile ease 2s;
+    background-image: url("./pictures/wave.gif");
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .bend .redSquare #menuButton {
@@ -183,6 +221,16 @@
           animation: openMenu ease 2s;
 }
 
+@media screen and (max-device-width: 480px) {
+  .bendOpen {
+    height: 100vh;
+    -webkit-transform: translate(10%, 0%);
+            transform: translate(10%, 0%);
+    -webkit-animation: openMenu-mobile ease 2s;
+            animation: openMenu-mobile ease 2s;
+  }
+}
+
 .bendOpen .greenSquare {
   width: 12%;
   height: 22vh;
@@ -196,6 +244,12 @@
           animation: openCol1 ease 1s;
 }
 
+@media screen and (max-device-width: 480px) {
+  .bendOpen .greenSquare {
+    display: none;
+  }
+}
+
 .bendOpen .blueSquare {
   width: 20%;
   height: 40vh;
@@ -207,6 +261,12 @@
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   -webkit-animation: openCol2 ease 1s;
           animation: openCol2 ease 1s;
+}
+
+@media screen and (max-device-width: 480px) {
+  .bendOpen .blueSquare {
+    display: none;
+  }
 }
 
 .bendOpen .redSquare {
@@ -231,13 +291,38 @@
           transform: translate(-10%, 6%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  -webkit-animation: openCol3 ease 1s;
-          animation: openCol3 ease 1s;
+  -webkit-animation: openCol3 ease 2s;
+          animation: openCol3 ease 2s;
+}
+
+@media screen and (max-device-width: 480px) {
+  .bendOpen .redSquare {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+    -webkit-animation: openCol3-mobile ease 2s;
+            animation: openCol3-mobile ease 2s;
+    background-image: url("./pictures/wave.gif");
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .bendOpen .redSquare .linkBox {
   margin-left: 4%;
   margin-top: 10vh;
+}
+
+@media screen and (max-device-width: 480px) {
+  .bendOpen .redSquare .linkBox {
+    margin-left: 0%;
+    padding: 4%;
+    background-color: #ffffff21;
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+    width: 100%;
+  }
 }
 
 .bendOpen .redSquare .linkBox p {
@@ -322,6 +407,36 @@
   }
 }
 
+@-webkit-keyframes openMenu-mobile {
+  0% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 1;
+    height: 100vh;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 4;
+    height: 100vh;
+  }
+}
+
+@keyframes openMenu-mobile {
+  0% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 1;
+    height: 100vh;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 4;
+    height: 100vh;
+  }
+}
+
 @-webkit-keyframes closeMenu {
   0% {
     -webkit-transform: rotate(0deg) translate(20%, -10%);
@@ -351,6 +466,42 @@
     -webkit-transform: rotate(-15deg) translate(35%, -20%);
             transform: rotate(-15deg) translate(35%, -20%);
     z-index: 1;
+  }
+}
+
+@-webkit-keyframes closeMenu-mobile {
+  0% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 4;
+  }
+  10% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
+  }
+}
+
+@keyframes closeMenu-mobile {
+  0% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 4;
+  }
+  10% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(10%, 0%);
+            transform: rotate(0deg) translate(10%, 0%);
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
   }
 }
 
@@ -428,6 +579,66 @@
   }
 }
 
+@-webkit-keyframes openCol3-mobile {
+  0% {
+    width: 100%;
+    height: 10vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3-mobile {
+  0% {
+    width: 100%;
+    height: 10vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@-webkit-keyframes openCol3-mobile-spec {
+  0% {
+    width: 40%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3-mobile-spec {
+  0% {
+    width: 40%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
 @-webkit-keyframes openCol1rev {
   0% {
     width: 12%;
@@ -502,6 +713,66 @@
   }
 }
 
+@-webkit-keyframes openCol3rev-mobile {
+  0% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    height: 10vh;
+    width: 100%;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3rev-mobile {
+  0% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    height: 10vh;
+    width: 100%;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@-webkit-keyframes openCol3rev-mobile-spec {
+  0% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    height: 100vh;
+    width: 40%;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes openCol3rev-mobile-spec {
+  0% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    height: 100vh;
+    width: 40%;
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+}
+
 #scrollUp {
   position: fixed;
   bottom: 20px;
@@ -540,8 +811,32 @@
   position: absolute;
 }
 
+@media screen and (max-device-width: 480px) {
+  .menu .bend .redSquare {
+    height: 100vh;
+    width: 40%;
+    -webkit-animation: openCol3rev-mobile-spec ease 2s;
+            animation: openCol3rev-mobile-spec ease 2s;
+  }
+}
+
 .menu .bendOpen {
   position: static;
+}
+
+@media screen and (max-device-width: 480px) {
+  .menu .bendOpen {
+    position: fixed;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .menu .bendOpen .redSquare {
+    height: 100vh;
+    width: 100%;
+    -webkit-animation: openCol3-mobile-spec ease 2s;
+            animation: openCol3-mobile-spec ease 2s;
+  }
 }
 
 .about {
