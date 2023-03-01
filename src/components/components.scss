@@ -37,20 +37,34 @@ $font3: "Xanh Mono", monospace;
 }
 
 @mixin year {
-  padding-left: 6vh;
-  font-size: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  font-size: 6vw;
   font-family: $font1;
   font-weight: 800;
   color: aliceblue;
   text-shadow: 2px 3px 2px black, -2px -3px 2px black;
+  @media screen and (max-device-width: 480px) {
+    padding-left: 2vw;
+    font-size: 12vw;
+    align-items: flex-start;
+  }
 }
 
 @mixin CVtextStyle {
   font-family: $font2;
-  font-size: 3.5vh;
+  font-size: 2vw;
   font-weight: 600;
   color: #000000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+  @media screen and (max-device-width: 480px) {
+    background-color: #ffffff47;
+    font-size: 4vw;
+    border-radius: 6px;
+    padding: 4vw;
+    margin-bottom: 4vw;
+  }
 }
 
 @media screen and (max-device-width: 480px) {
@@ -172,6 +186,9 @@ $font3: "Xanh Mono", monospace;
 
     #menuButton {
       @include button;
+      @media screen and (max-device-width: 480px) {
+        font-size: 5vw;
+      }
     }
 
     #menuButton:hover {
@@ -501,6 +518,12 @@ $font3: "Xanh Mono", monospace;
   z-index: 4;
 
   @include button;
+  @media screen and (max-device-width: 480px) {
+    background-color: #bf3939;
+    width: 90vw;
+    left: 3vw;
+    justify-content: center;
+  }
 }
 //menu
 .menu {
@@ -537,27 +560,32 @@ $font3: "Xanh Mono", monospace;
   height: fit-content;
 
   display: grid;
-  grid-template-columns: [line1] 300px [line2] 300px [line3] auto [line4] 400px [lastLine];
-  grid-template-rows: [row1] 100px [row2] 200px [row3] 300px [row4] 400px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px[row10] 150px 200px [row11] 200px[row12] 200px[row13] 200px [row14] 300px [row15] 500px [lastRow];
+  grid-template-columns: [line1] 20% [line2] 40% [line3] 40% [lastLine];
+  grid-template-rows: [row1] 100px [row2] 200px [row3] 200px [row4] 300px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px[row10] 250px [row11] 200px[row12] 200px[row13] 200px [row14] 300px [row15] 200px [lastRow];
+
+  @media screen and (max-device-width: 480px) {
+    grid-template-columns: [line1] 30% [line2] 70% [line3] 0% [lastLine];
+    grid-template-rows: [row1] 10vh [row2] 30vh [row3] 30vh [row4] 30vh [row5] 30vh [row6] 30vh [row7] 30vh [row8] 30vh [row9]30vh[row10] 30vh [row11]30vh[row12] 0vh[row13] 30vh [row14] 30vh [row15]50vh [lastRow];
+  }
 
   grid-template-areas:
     /* 1 */
-    ". . . . "
-    /* 2 */ "year  desc desc . "
-    /* 3 */ " year1 desc1 desc1 me "
-    /* 4 */ " year2 gimiregen . desc2 "
-    /* 5 */ " year3 desc3 desc3 desc2 "
-    /* 6 */ "year4 desc5 desc5 desc4 "
-    /* 7 */ " year5 oyster . desc6  "
-    /* 8 */ " year6 oyster . desc6  "
-    /* 9 */ ".  zugspitze zugspitze zugspitze"
-    /* 10 */ "matterhorn matterhorn . . "
-    /* 11 */ " year9 desc9 desc9 ."
-    /* 12 */ " year11 year11 . . "
-    /* 13 */ " corsica corsica corsica corsica "
-    /* 14 */ "year13 desc8 desc8  me2 "
-    /* 15*/ " year14 year14 desc14 me2 "
-    /* 15*/ " year15 desc15 desc15 me2 ";
+    ". . me"
+    /* 2 */ "year desc . "
+    /* 3 */ " year1 desc1 ."
+    /* 4 */ " year2  desc2 desc2"
+    /* 5 */ " year3 desc3 gimiregen "
+    /* 6 */ "year4 desc5 gimiregen "
+    /* 7 */ " year5  desc4 oyster"
+    /* 8 */ " year6  desc6 oyster "
+    /* 9 */ "zugspitze zugspitze zugspitze"
+    /* 10 */ "matterhorn matterhorn ."
+    /* 11 */ " year9 desc9 desc9 "
+    /* 12 */ " year11 year11 . "
+    /* 13 */ "corsica corsica corsica "
+    /* 14 */ "year13 desc8 me2 "
+    /* 15*/ " year14 desc15 desc15 "
+    /* 15*/ " . download  .";
 
   overflow: hidden;
 
@@ -577,14 +605,19 @@ $font3: "Xanh Mono", monospace;
     grid-area: me;
     position: absolute;
     z-index: 2;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    transform: translate(0%, 40%);
+    width: 16vw;
+    height: 16vw;
+    transform: translate(0%, 3%);
+    padding: 1vw;
     border: lavenderblush 4px solid;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    @media screen and (max-device-width: 480px) {
+      transform: translate(-110%, 10%);
+      width: 22vw;
+      height: 22vw;
+    }
   }
 
   .year {
@@ -648,7 +681,6 @@ $font3: "Xanh Mono", monospace;
 
   .expCard.four {
     grid-area: desc4;
-    color: $red;
   }
 
   .year.five {
@@ -660,7 +692,6 @@ $font3: "Xanh Mono", monospace;
   }
 
   .expCard.six {
-    transform: translate(-20%, 0%);
     grid-area: desc6;
   }
 
@@ -671,13 +702,12 @@ $font3: "Xanh Mono", monospace;
     grid-area: oyster;
     align-self: center;
     border-radius: 50%;
-    margin-left: 40px;
+    margin-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 
   .year.six {
-    margin: auto;
     grid-area: year6;
   }
 
@@ -689,7 +719,6 @@ $font3: "Xanh Mono", monospace;
     grid-area: zugspitze;
 
     width: 100%;
-    border-radius: 4px;
     background-image: url("./pictures/zugspitze.jpg");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -704,6 +733,9 @@ $font3: "Xanh Mono", monospace;
       font-size: 100px;
       grid-area: year7;
       z-index: 2;
+      @media screen and (max-device-width: 480px) {
+        font-size: 16vw;
+      }
     }
 
     .expCard.seven {
@@ -734,10 +766,13 @@ $font3: "Xanh Mono", monospace;
   }
 
   .expCard.eight {
-    margin-top: 160px;
     margin-left: 10px;
     grid-area: desc8;
     @include CVtextStyle;
+    @media screen and (max-device-width: 480px) {
+      display: block;
+      margin-left: 0px;
+    }
   }
 
   .year.nine {
@@ -750,6 +785,9 @@ $font3: "Xanh Mono", monospace;
     grid-area: desc9;
     @include CVtextStyle;
     color: #ffffff;
+    @media screen and (max-device-width: 480px) {
+      margin-top: 0px;
+    }
   }
 
   #corsica {
@@ -765,6 +803,7 @@ $font3: "Xanh Mono", monospace;
     background-repeat: no-repeat;
     background-position-x: left;
     background-size: cover;
+    margin-bottom: 4vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
@@ -776,6 +815,9 @@ $font3: "Xanh Mono", monospace;
       font-size: 100px;
       grid-area: year11;
       z-index: 2;
+      @media screen and (max-device-width: 480px) {
+        font-size: 16vw;
+      }
     }
 
     .expCard.eleven {
@@ -798,9 +840,6 @@ $font3: "Xanh Mono", monospace;
 
   .year.fourteen {
     @include year;
-    color: $red;
-
-    font-size: 20vh;
     grid-area: year14;
   }
 
@@ -813,7 +852,7 @@ $font3: "Xanh Mono", monospace;
     width: 400px;
     align-self: center;
     border-radius: 50%;
-    margin-top: 60px;
+    transform: translate(26%, 32%);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     opacity: 0.4;
@@ -821,18 +860,25 @@ $font3: "Xanh Mono", monospace;
 
   .year.fifteen {
     @include year;
-    color: $red;
     grid-area: year15;
   }
 
   .expCard.fifteen {
+    @include CVtextStyle;
     grid-area: desc15;
+    @media screen and (max-device-width: 480px) {
+      display: block;
+    }
   }
 
   #downloadCV {
-    position: absolute;
-    z-index: 4;
+    transform: translate(0%, 80%);
+    grid-area: download;
     @include button();
+    @media screen and (max-device-width: 480px) {
+      width: 90vw;
+      transform: translate(-30%, 0%);
+    }
   }
 
   #downloadCV:hover {
@@ -860,11 +906,12 @@ $font3: "Xanh Mono", monospace;
     height: fit-content;
     @media screen and (max-device-width: 480px) {
       margin-top: 16vh;
+      height: fit-content;
     }
 
     .imgBox {
       height: 40vh;
-      width: 96vw;
+      width: 82vw;
 
       display: flex;
       flex-direction: row;
@@ -885,19 +932,26 @@ $font3: "Xanh Mono", monospace;
         height: fit-content;
       }
 
-      img {
-        overflow: hidden;
-        width: fit-content;
-        height: 40vh;
-        border-radius: 12px;
-
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      #img-link {
+        all: unset;
         @media screen and (max-device-width: 480px) {
-          width: 96%;
-          height: fit-content;
+          display: flex;
+          justify-content: center;
+        }
+        img {
+          overflow: hidden;
+          width: fit-content;
+          height: 40vh;
+          border-radius: 12px;
+
+          box-sizing: border-box;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          @media screen and (max-device-width: 480px) {
+            width: 96%;
+            height: fit-content;
+          }
         }
       }
       a {
@@ -938,6 +992,7 @@ $font3: "Xanh Mono", monospace;
       a:hover {
         background-size: 51% 51%;
         background-color: $blue;
+        color: rgb(33, 87, 106);
       }
       h2 {
         margin: 10px;
@@ -960,7 +1015,7 @@ $font3: "Xanh Mono", monospace;
 
   #menuContainer {
     position: absolute;
-
+    z-index: 4;
     height: 82vh;
     width: 60%;
     transform: translate(10%, 11%);

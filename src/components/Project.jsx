@@ -17,30 +17,50 @@ export default function Projects() {
       <Scroll />
       <div className="imgContainer" style={{ whiteSpace: "nowrap" }}>
         <div className="imgBox">
-          <img src={GAMES} alt="oops :( somthing went wrong" />
+          <a
+            href="https://hegedusalexandra.github.io/small_projects/"
+            id="img-link"
+          >
+            <img src={GAMES} alt="oops :( somthing went wrong" />
+          </a>
           <div className="desc-container">
             <a href="https://hegedusalexandra.github.io/small_projects/">
               Check it out!
             </a>
-            <h2 className="description">Small games with JavaScript</h2>
+            <h2 className="description">JavaScript</h2>
+            <h2 className="description">Interact.js</h2>
           </div>
         </div>
         <div className="imgBox">
-          <img src={CV} alt="oops :( somthing went wrong" />
+          <a
+            id="img-link"
+            href="https://hegedusalexandra.github.io/CurriculumVITAE/"
+          >
+            <img src={CV} alt="oops :( somthing went wrong" />
+          </a>
           <div className="desc-container">
             <a href="https://hegedusalexandra.github.io/CurriculumVITAE/">
               Check it out!
             </a>
-            <h2 className="description">My patissier CV site with React</h2>
+            <h2 className="description">React</h2>
+            <h2 className="description">React swiper</h2>
+            <h2 className="description">React router</h2>
           </div>
         </div>
         <div className="imgBox">
-          <img src={OMAS} alt="oops :( somthing went wrong" />
+          <a
+            id="img-link"
+            href="https://hegedusalexandra.github.io/OMASKLEIDERSCHRANK/"
+          >
+            <img src={OMAS} alt="oops :( somthing went wrong" />
+          </a>
           <div className="desc-container">
             <a href="https://hegedusalexandra.github.io/OMASKLEIDERSCHRANK/">
               Check it out!
             </a>
-            <h2 className="description">React website for clothing shop</h2>
+            <h2 className="description">React</h2>
+            <h2 className="description">React swiper</h2>
+            <h2 className="description">Sass</h2>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import "./components.css";
 import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import wave from "./pictures/wave.mp4";
 
 export default function Menu({ title }) {
   const [menuState, setMenuState] = useState(false);

@@ -125,8 +125,7 @@ export default function About() {
       <div id="zugspitze" className="reveal">
         <p className="year seven reveal">2014</p>
         <div className="expCard seven reveal">
-          I worked as a Commis Pastry Chef in many 4* and 5* hotel all around
-          Europe.
+          I worked as a Pastry Chef in many 4* and 5* hotel all around Europe.
         </div>
       </div>
       <img
@@ -154,15 +153,16 @@ export default function About() {
       </div>
       <img id="me2" src={me2} alt="me" />
       <p className="year fifteen reveal">2023</p>
-      <div className="expCard fifteen">
-        I finished my studies in Codecool,and gain knowledge with
-        JavaScript,CSS,SCSS,HTML,React,Docker,Node.js Than I learnt PHP and SQL
-        from Ruander. Currently I am working on developing my knowledge in these
-        fields and want to learn also Angular.
-        <button id="downloadCV" onClick={downloadDOCX}>
-          CLICK TO DOWNLOAD CV
-        </button>
+      <div className="expCard fifteen reveal">
+        I finished my studies in Codecool,where I have learnt
+        JavaScript,CSS,SCSS,HTML,React,Docker,Node.js.
+        <br /> Than I was learning PHP and SQL from Ruander.
+        <br /> Currently I am working on developing my knowledge in these
+        fields.
       </div>
+      <button id="downloadCV" onClick={downloadDOCX}>
+        CLICK TO DOWNLOAD CV
+      </button>
     </div>
   );
 }
