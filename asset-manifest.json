@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alexandra_s_portfolio/static/css/main.6b624c33.css",
-    "main.js": "/alexandra_s_portfolio/static/js/main.741c7cdb.js",
+    "main.css": "/alexandra_s_portfolio/static/css/main.1c543ed7.css",
+    "main.js": "/alexandra_s_portfolio/static/js/main.6d1678a0.js",
     "static/js/787.76f235eb.chunk.js": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js",
     "static/media/Corsica.jpg": "/alexandra_s_portfolio/static/media/Corsica.20be2979d4223f6a9535.jpg",
     "static/media/wave.gif": "/alexandra_s_portfolio/static/media/wave.6e59a63d2970d6b1b163.gif",
@@ -16,12 +16,12 @@
     "static/media/zugspitze.jpg": "/alexandra_s_portfolio/static/media/zugspitze.f76b0af9460ad32a6cf5.jpg",
     "static/media/Én.jpg": "/alexandra_s_portfolio/static/media/Én.064ba11877c926f9b7fe.jpg",
     "index.html": "/alexandra_s_portfolio/index.html",
-    "main.6b624c33.css.map": "/alexandra_s_portfolio/static/css/main.6b624c33.css.map",
-    "main.741c7cdb.js.map": "/alexandra_s_portfolio/static/js/main.741c7cdb.js.map",
+    "main.1c543ed7.css.map": "/alexandra_s_portfolio/static/css/main.1c543ed7.css.map",
+    "main.6d1678a0.js.map": "/alexandra_s_portfolio/static/js/main.6d1678a0.js.map",
     "787.76f235eb.chunk.js.map": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b624c33.css",
-    "static/js/main.741c7cdb.js"
+    "static/css/main.1c543ed7.css",
+    "static/js/main.6d1678a0.js"
   ]
 }
