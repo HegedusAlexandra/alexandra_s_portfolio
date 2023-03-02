@@ -77,15 +77,14 @@ export default function About() {
       {visib > 300 && <Scroll />}
       <svg height="100vh" width="100%" id="circleLeft">
         <circle
+          id="circle"
           cx="10%"
           cy="50%"
           r={visib < 2000 ? visib / 2 : 2600 - visib / 1.5}
           fill="#a83b3bd8"
         />
       </svg>
-      <p className="year" style={{ color: "#7b7b7b" }}>
-        1990
-      </p>
+      <p className="year">1990</p>
       <div className="expCard">
         Born on 12th May 1990,Miskolc in a beautiful saturday.
       </div>

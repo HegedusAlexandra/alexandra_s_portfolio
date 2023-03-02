@@ -59,26 +59,29 @@ $font3: "Xanh Mono", monospace;
   color: #000000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
   @media screen and (max-device-width: 480px) {
-    background-color: #ffffff47;
+    background-color: #ffffff8c;
     font-size: 4vw;
     border-radius: 6px;
     padding: 4vw;
     margin-bottom: 4vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 }
-
 @media screen and (max-device-width: 480px) {
   .menu {
     #menuContainer {
       height: 100vh;
+      width: 100%;
       h1 {
         font-size: 16vw;
         left: 10%;
-        top: 20%;
+        top: 30%;
       }
 
       h2 {
-        top: 6%;
+        top: 20%;
         left: 10%;
         font-size: x-large;
       }
@@ -103,7 +106,7 @@ $font3: "Xanh Mono", monospace;
 
   @media screen and (max-device-width: 480px) {
     width: 100%;
-    height: 10vh;
+    height: 14vh;
     transform: rotate(0deg) translate(0%, 0%);
     animation: closeMenu-mobile ease 2s;
   }
@@ -174,7 +177,8 @@ $font3: "Xanh Mono", monospace;
     animation: openCol3rev ease 2s;
 
     @media screen and (max-device-width: 480px) {
-      height: 10vh;
+      align-items: flex-start;
+      height: 14vh;
       width: 100%;
       transform: translate(0%, 0%);
       border-radius: 0px;
@@ -187,7 +191,7 @@ $font3: "Xanh Mono", monospace;
     #menuButton {
       @include button;
       @media screen and (max-device-width: 480px) {
-        font-size: 5vw;
+        font-size: 10vw;
       }
     }
 
@@ -386,7 +390,7 @@ $font3: "Xanh Mono", monospace;
     z-index: 1;
   }
   100% {
-    transform: rotate(0deg) translate(10%, 0%);
+    transform: rotate(0deg) translate(0%, 0%);
     z-index: 1;
     width: 100%;
     height: 10vh;
@@ -492,9 +496,9 @@ $font3: "Xanh Mono", monospace;
     transform: translate(-10%, 0%);
   }
   100% {
-    height: 10vh;
+    height: 14vh;
     width: 100%;
-    transform: translate(-10%, 0%);
+    transform: translate(0%, 0%);
   }
 }
 
@@ -558,6 +562,10 @@ $font3: "Xanh Mono", monospace;
   @include page;
   background-color: lavenderblush;
   height: fit-content;
+
+  @media screen and (max-device-width: 480px) {
+    background-color: whitesmoke;
+  }
 
   display: grid;
   grid-template-columns: [line1] 20% [line2] 40% [line3] 40% [lastLine];
@@ -673,6 +681,11 @@ $font3: "Xanh Mono", monospace;
   #circleLeft {
     position: fixed;
     z-index: -1;
+    #circle {
+      @media screen and (max-device-width: 480px) {
+        fill: darkblue;
+      }
+    }
   }
 
   .year.four {
@@ -984,8 +997,11 @@ $font3: "Xanh Mono", monospace;
         cursor: pointer;
         box-shadow: 2px 2px 6px rgb(0, 0, 0),
           -1px -1px 6px rgba(255, 255, 255, 0.527);
+        box-sizing: border-box;
         @media screen and (max-device-width: 480px) {
           z-index: 0;
+          width: 90%;
+          margin-top: 2vh;
         }
       }
 
@@ -1030,8 +1046,14 @@ $font3: "Xanh Mono", monospace;
 
     @media screen and (max-device-width: 480px) {
       width: 98%;
-      height: 40vh;
-      transform: translate(1%, 50%);
+      height: 76vh;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: translate(1%, 20%);
+      background-color: #ffffffa1;
+      backdrop-filter: blur(1px);
     }
 
     p {
@@ -1060,12 +1082,13 @@ $font3: "Xanh Mono", monospace;
       color: aliceblue;
       text-shadow: 1px 2px 2px black, -1px -2px 2px black;
       @media screen and (max-device-width: 480px) {
-        font-size: 4vw;
+        font-size: 5.4vw;
         margin: 3vw;
-        font-family: $font1;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         letter-spacing: 0px;
-        font-weight: 400;
-        text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+        font-weight: 800;
+        text-shadow: none;
+        color: #000000;
       }
     }
   }
