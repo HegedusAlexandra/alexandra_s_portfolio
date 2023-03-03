@@ -36,12 +36,13 @@ export default function Menu({ title }) {
           {menuState && (
             <div className="linkBox">
               <Link to="/">Home</Link>
-              <p>some humble word about my life</p>
+              <p>the opening page</p>
               <Link to="/about">About</Link>
-              <p>to offer into your precious attention</p>
+              <p>a short introduction</p>
               <Link to="/project">Project</Link>
-              <p>about how you get in contact with me</p>
+              <p>some projects</p>
               <Link to="/contact">Contact</Link>
+              <p>informations to get in contact</p>
             </div>
           )}
           <button id="menuButton" onClick={handleMenu}>

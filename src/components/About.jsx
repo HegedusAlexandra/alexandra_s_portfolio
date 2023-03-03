@@ -44,7 +44,7 @@ export default function About() {
     for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;
       let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 150;
+      let elementVisible = 10;
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -84,45 +84,42 @@ export default function About() {
           fill="#a83b3bd8"
         />
       </svg>
-      <p className="year">1990</p>
+      <div className="year">1990</div>
       <div className="expCard">
         Born on 12th May 1990,Miskolc in a beautiful saturday.
       </div>
       <img id="me" src={me} alt="me" />
-      <p className="year one">1996</p>
+      <div className="year one">1996</div>
       <div className="expCard one">
         I spent my first years in Móra Ferenc primary school.
       </div>
-      <p className="year two">2002</p>
+      <div className="year two">2002</div>
       {!isMobile && <img src={gimiregen} id="gimiregen" alt="gimiregen" />}
       <div className="expCard two">
         {" "}
         After that I attended Diősgyőri secondary grammar school where my
-        specialized subject was English.
+        specialized subject was English.I did a high school diploma in IT in
+        english at age 16.
       </div>
-      <p className="year three reveal">2008</p>
+      <div className="year three reveal">2008</div>
       <div className="expCard three reveal">
         {" "}
         In 2008 I completed my secondary education obtaining the highest
-        possible certificate in English and the ECDL certificate.
+        possible certificate in English.
       </div>
-      <p className="year four reveal">2010</p>
+      <div className="year four reveal">2010</div>
       <div className="expCard four reveal">
         In 2010 I commenced studies in Industrial Design Engineering. However
         this was interrupted after 18 month due to family circumstances.
       </div>
-      <p className="year five reveal">2012</p>
+      <div className="year five reveal">2012</div>
       <div className="expCard five reveal">
-        I started my training and become a chef and was accepted in the famous
-        traditional hungarian restaurant called Gundel.
-      </div>
-      <div className="expCard six reveal">
-        In 2012 I graduated as a chef and opted to specialise in Patisserie.
+        I started my training and become a chef.In 2012 I graduated as a chef
+        and opted to specialise in Patisserie.
       </div>
       <img id="oyster" className="reveal" src={oyster} alt="oyster" />
-      <p className="year six reveal">2013</p>
       <div id="zugspitze" className="reveal">
-        <p className="year seven reveal">2014</p>
+        <div className="year seven reveal">2014</div>
         <div className="expCard seven reveal">
           I worked as a Pastry Chef in many 4* and 5* hotel all around Europe.
         </div>
@@ -133,25 +130,15 @@ export default function About() {
         src={matterhorn}
         alt="matterhorn"
       />
+      <div className="year eight reveal">2021</div>
       <div className="expCard eight reveal">
         I had been working in Sweden,Austria,Germany,France,Swiss
       </div>
-      <p className="year nine reveal">2017</p>
-      <div className="expCard nine reveal">
-        In 2017 I accepted a position as a Commercial Manager with Auchan Retail
-      </div>
-      <div id="corsica" className="reveal">
-        <p className="year eleven reveal">2019</p>
-      </div>
 
-      <p className="year thirteen reveal">2021</p>
-      <p className="year fourteen reveal">2022</p>
-      <div className="expCard fourteen reveal">
-        After receiving my vaccination I headed to Austria to be able to fund my
-        programming studies.
-      </div>
+      <div className="year fourteen reveal">2022</div>
+
       <img id="me2" src={me2} alt="me" />
-      <p className="year fifteen reveal">2023</p>
+
       <div className="expCard fifteen reveal">
         I finished my studies in Codecool,where I have learnt
         JavaScript,CSS,SCSS,HTML,React,Docker,Node.js.
@@ -160,7 +147,7 @@ export default function About() {
         fields.
       </div>
       <button id="downloadCV" onClick={downloadDOCX}>
-        CLICK TO DOWNLOAD CV
+        download CV
       </button>
     </div>
   );

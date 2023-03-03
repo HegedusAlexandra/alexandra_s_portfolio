@@ -22,7 +22,8 @@ $font3: "Xanh Mono", monospace;
   align-items: flex-start;
   height: fit-content;
   width: fit-content;
-  background-color: #75c1da;
+  background-color: #ffffff6c;
+  backdrop-filter: blur(6px);
   font-size: x-large;
   color: white;
   font-weight: 800;
@@ -38,7 +39,7 @@ $font3: "Xanh Mono", monospace;
 
 @mixin year {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 1vw;
   font-size: 6vw;
   font-family: $font1;
@@ -46,19 +47,22 @@ $font3: "Xanh Mono", monospace;
   color: aliceblue;
   text-shadow: 2px 3px 2px black, -2px -3px 2px black;
   @media screen and (max-device-width: 480px) {
-    padding-left: 2vw;
+    padding-left: 4vw;
     font-size: 12vw;
     align-items: flex-start;
   }
 }
 
 @mixin CVtextStyle {
+  margin-top: 4vh;
   font-family: $font2;
   font-size: 2vw;
   font-weight: 600;
   color: #000000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
   @media screen and (max-device-width: 480px) {
+    width: 86%;
+    height: fit-content;
     background-color: #ffffff8c;
     font-size: 4vw;
     border-radius: 6px;
@@ -84,6 +88,7 @@ $font3: "Xanh Mono", monospace;
         top: 20%;
         left: 10%;
         font-size: x-large;
+        width: 40%;
       }
     }
   }
@@ -190,8 +195,10 @@ $font3: "Xanh Mono", monospace;
 
     #menuButton {
       @include button;
+      text-shadow: 2px 2px 2px black, -2px -2px 2px rgb(116, 116, 116);
       @media screen and (max-device-width: 480px) {
         font-size: 10vw;
+        color: whitesmoke;
       }
     }
 
@@ -320,15 +327,20 @@ $font3: "Xanh Mono", monospace;
       font-size: x-large;
       color: white;
       font-weight: 800;
-      border-radius: 4px;
-      padding: 10px;
       margin: 10px;
-
+      padding: 10px;
+      border-radius: 4px;
       cursor: pointer;
 
-      box-shadow: 2px 2px 4px rgb(0, 0, 0),
+      box-shadow: 1px 1px 4px rgb(0, 0, 0),
         -1px -1px 4px rgba(255, 255, 255, 0.527);
-      text-shadow: 2px 2px 2px black;
+
+      @media screen and (max-device-width: 480px) {
+        transform: translate(70%, -70%);
+        background-color: $blue;
+
+        /* backdrop-filter: blur(4px); */
+      }
     }
 
     #menuButton:hover {
@@ -384,14 +396,14 @@ $font3: "Xanh Mono", monospace;
 @keyframes closeMenu-mobile {
   0% {
     transform: rotate(0deg) translate(10%, 0%);
-    z-index: 4;
+    z-index: 1;
   }
   10% {
-    z-index: 1;
+    z-index: 3;
   }
   100% {
     transform: rotate(0deg) translate(0%, 0%);
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     height: 10vh;
   }
@@ -521,12 +533,17 @@ $font3: "Xanh Mono", monospace;
   right: 60px;
   z-index: 4;
 
+  .material-symbols-rounded {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  }
+
   @include button;
   @media screen and (max-device-width: 480px) {
     background-color: #bf3939;
-    width: 90vw;
+    width: 20vw;
     left: 3vw;
     justify-content: center;
+    z-index: 1;
   }
 }
 //menu
@@ -564,7 +581,7 @@ $font3: "Xanh Mono", monospace;
   height: fit-content;
 
   @media screen and (max-device-width: 480px) {
-    background-color: whitesmoke;
+    background-color: #c3ffef;
   }
 
   display: grid;
@@ -572,28 +589,26 @@ $font3: "Xanh Mono", monospace;
   grid-template-rows: [row1] 100px [row2] 200px [row3] 200px [row4] 300px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px[row10] 250px [row11] 200px[row12] 200px[row13] 200px [row14] 300px [row15] 200px [lastRow];
 
   @media screen and (max-device-width: 480px) {
-    grid-template-columns: [line1] 30% [line2] 70% [line3] 0% [lastLine];
-    grid-template-rows: [row1] 10vh [row2] 30vh [row3] 30vh [row4] 30vh [row5] 30vh [row6] 30vh [row7] 30vh [row8] 30vh [row9]30vh[row10] 30vh [row11]30vh[row12] 0vh[row13] 30vh [row14] 30vh [row15]50vh [lastRow];
+    grid-template-columns: [line1] 20% [line2] 78% [line3] 2% [lastLine];
+    grid-template-rows: [row1] 20vh [row2] 20vh [row3] 20vh [row4] 30vh [row5] 30vh [row6] 30vh [row7] 0vh [row8] 30vh [row9]30vh[row10] 30vh [row11]20vh[row12] 0vh[row13] 40vh [row14] 40vh [lastRow];
   }
 
   grid-template-areas:
     /* 1 */
-    ". . me"
-    /* 2 */ "year desc . "
+    " . . me"
+    /* 2 */ " year desc . "
     /* 3 */ " year1 desc1 ."
-    /* 4 */ " year2  desc2 desc2"
+    /* 4 */ " year2  desc2 ."
     /* 5 */ " year3 desc3 gimiregen "
-    /* 6 */ "year4 desc5 gimiregen "
-    /* 7 */ " year5  desc4 oyster"
-    /* 8 */ " year6  desc6 oyster "
+    /* 6 */ " year4 desc4 gimiregen "
+    /* 7 */ " year5 desc5 oyster"
+    /* 8 */ " . . oyster "
     /* 9 */ "zugspitze zugspitze zugspitze"
     /* 10 */ "matterhorn matterhorn ."
-    /* 11 */ " year9 desc9 desc9 "
-    /* 12 */ " year11 year11 . "
-    /* 13 */ "corsica corsica corsica "
-    /* 14 */ "year13 desc8 me2 "
-    /* 15*/ " year14 desc15 desc15 "
-    /* 15*/ " . download  .";
+    /* 11 */ "year8 desc8 . "
+    /* 12 */ "year13 desc9 me2 "
+    /* 13*/ " year14 desc15 . "
+    /* 14*/ " . download download";
 
   overflow: hidden;
 
@@ -683,7 +698,7 @@ $font3: "Xanh Mono", monospace;
     z-index: -1;
     #circle {
       @media screen and (max-device-width: 480px) {
-        fill: darkblue;
+        fill: #11796e;
       }
     }
   }
@@ -704,10 +719,6 @@ $font3: "Xanh Mono", monospace;
     grid-area: desc5;
   }
 
-  .expCard.six {
-    grid-area: desc6;
-  }
-
   #oyster {
     position: relative;
     z-index: 1;
@@ -718,10 +729,6 @@ $font3: "Xanh Mono", monospace;
     margin-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-
-  .year.six {
-    grid-area: year6;
   }
 
   #zugspitze {
@@ -747,7 +754,7 @@ $font3: "Xanh Mono", monospace;
       grid-area: year7;
       z-index: 2;
       @media screen and (max-device-width: 480px) {
-        font-size: 16vw;
+        font-size: 14vw;
       }
     }
 
@@ -776,15 +783,32 @@ $font3: "Xanh Mono", monospace;
     grid-area: matterhorn;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    @media screen and (max-device-width: 480px) {
+      margin: 0px;
+      margin-top: 10vh;
+    }
+  }
+
+  .year.eight {
+    @include year;
+    grid-area: year8;
   }
 
   .expCard.eight {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
     margin-left: 10px;
+    border-radius: 4px;
     grid-area: desc8;
+    right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
     @include CVtextStyle;
     @media screen and (max-device-width: 480px) {
       display: block;
-      margin-left: 0px;
+
+      @include CVtextStyle();
+      backdrop-filter: unset;
     }
   }
 
@@ -889,8 +913,9 @@ $font3: "Xanh Mono", monospace;
     grid-area: download;
     @include button();
     @media screen and (max-device-width: 480px) {
+      display: block;
       width: 90vw;
-      transform: translate(-30%, 0%);
+      transform: translate(-19%, 0%);
     }
   }
 

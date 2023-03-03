@@ -23,7 +23,7 @@ export default function Scroll() {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
         >
-          Scroll to top
+          <span class="material-symbols-rounded">arrow_upward</span>
         </button>
       )}
     </div>
