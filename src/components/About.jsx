@@ -132,7 +132,7 @@ export default function About() {
       />
       <div className="year eight reveal">2021</div>
       <div className="expCard eight reveal">
-        I had been working in Sweden,Austria,Germany,France,Swiss
+        I had been working in Sweden, Austria, Germany, France, Swiss
       </div>
 
       <div className="year fourteen reveal">2022</div>
@@ -140,8 +140,8 @@ export default function About() {
       <img id="me2" src={me2} alt="me" />
 
       <div className="expCard fifteen reveal">
-        I finished my studies in Codecool,where I have learnt
-        JavaScript,CSS,SCSS,HTML,React,Docker,Node.js.
+        I finished my studies in Codecool,where I have learnt JavaScript, CSS,
+        SCSS, HTML, React, Docker, Node.js.
         <br /> Than I was learning PHP and SQL from Ruander.
         <br /> Currently I am working on developing my knowledge in these
         fields.

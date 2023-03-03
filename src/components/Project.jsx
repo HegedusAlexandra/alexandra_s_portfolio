@@ -60,6 +60,7 @@ export default function Projects() {
             </a>
             <h2 className="description">React</h2>
             <h2 className="description">React swiper</h2>
+            <h2 className="description">Multilingual</h2>
             <h2 className="description">Sass</h2>
           </div>
         </div>

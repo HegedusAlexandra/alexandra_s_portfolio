@@ -1894,12 +1894,6 @@
   margin-top: 10vh;
 }
 
-@media screen and (max-device-width: 480px) {
-  .contact #menuContainer p {
-    margin-top: 1vh;
-  }
-}
-
 .contact #menuContainer a,
 .contact #menuContainer h2 {
   all: unset;
