@@ -586,7 +586,7 @@ $font3: "Xanh Mono", monospace;
 
   display: grid;
   grid-template-columns: [line1] 20% [line2] 40% [line3] 40% [lastLine];
-  grid-template-rows: [row1] 100px [row2] 200px [row3] 200px [row4] 300px [row5] 200px [row6] 200px [row7] 200px [row8] 250px [row9] 350px[row10] 250px [row11] 200px[row12] 200px[row13] 200px [row14] 300px [row15] 200px [lastRow];
+  grid-template-rows: [row1] 100px [row2] 200px [row3] 200px [row4] 300px [row5] 240px [row6] 300px [row7] 300px [row8] 300px [row9] 350px[row10] 300px [row11] 300px[row12] 0px[row13]460px [row14] 300px [lastRow];
 
   @media screen and (max-device-width: 480px) {
     grid-template-columns: [line1] 20% [line2] 78% [line3] 2% [lastLine];
@@ -605,7 +605,7 @@ $font3: "Xanh Mono", monospace;
     /* 8 */ " . . oyster "
     /* 9 */ "zugspitze zugspitze zugspitze"
     /* 10 */ "matterhorn matterhorn ."
-    /* 11 */ "year8 desc8 . "
+    /* 11 */ "year8 desc8 desc8 "
     /* 12 */ "year13 desc9 me2 "
     /* 13*/ " year14 desc15 . "
     /* 14*/ " . download download";
@@ -797,6 +797,7 @@ $font3: "Xanh Mono", monospace;
   .expCard.eight {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
+    height: 4vh;
     margin-left: 10px;
     border-radius: 4px;
     grid-area: desc8;
@@ -804,9 +805,9 @@ $font3: "Xanh Mono", monospace;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     @include CVtextStyle;
+    padding: 20px;
     @media screen and (max-device-width: 480px) {
       display: block;
-
       @include CVtextStyle();
       backdrop-filter: unset;
     }
@@ -992,55 +993,66 @@ $font3: "Xanh Mono", monospace;
           }
         }
       }
-      a {
-        all: unset;
-        position: relative;
-        z-index: 5;
-        @include button;
-        justify-content: center;
+      .desc-container {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        --b: 5px; /* border thickness */
-        --c: #0000 25%, rgb(0, 0, 0) 0; /* define the color here */
-        padding: 12px;
-        background: conic-gradient(
-              from 90deg at top var(--b) left var(--b),
-              var(--c)
-            )
-            0 0,
-          conic-gradient(from 180deg at top var(--b) right var(--b), var(--c))
-            100% 0,
-          conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--c)) 0
-            100%,
-          conic-gradient(
-              from -90deg at bottom var(--b) right var(--b),
-              var(--c)
-            )
-            100% 100%;
-        background-size: 14px 14px; /* adjust border length here */
-        background-repeat: no-repeat;
-        transition: 0.6s;
-        cursor: pointer;
-        box-shadow: 2px 2px 6px rgb(0, 0, 0),
-          -1px -1px 6px rgba(255, 255, 255, 0.527);
-        box-sizing: border-box;
-        @media screen and (max-device-width: 480px) {
-          z-index: 0;
-          width: 90%;
-          margin-top: 2vh;
+        a {
+          all: unset;
+          position: relative;
+          z-index: 5;
+          @include button;
+          justify-content: center;
+
+          --b: 5px; /* border thickness */
+          --c: #0000 25%, rgb(0, 0, 0) 0; /* define the color here */
+          padding: 12px;
+          background: conic-gradient(
+                from 90deg at top var(--b) left var(--b),
+                var(--c)
+              )
+              0 0,
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--c))
+              100% 0,
+            conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--c))
+              0 100%,
+            conic-gradient(
+                from -90deg at bottom var(--b) right var(--b),
+                var(--c)
+              )
+              100% 100%;
+          background-size: 14px 14px; /* adjust border length here */
+          background-repeat: no-repeat;
+          transition: 0.6s;
+          cursor: pointer;
+          box-shadow: 2px 2px 6px rgb(0, 0, 0),
+            -1px -1px 6px rgba(255, 255, 255, 0.527);
+          box-sizing: border-box;
+          @media screen and (max-device-width: 480px) {
+            z-index: 0;
+            width: 90%;
+            margin-top: 2vh;
+          }
         }
-      }
 
-      a:hover {
-        background-size: 51% 51%;
-        background-color: $blue;
-        color: rgb(33, 87, 106);
-      }
-      h2 {
-        margin: 10px;
-        box-sizing: border-box;
-        @include CVtextStyle;
-        border-radius: 4px;
-        padding-left: 10px;
+        a:hover {
+          background-size: 51% 51%;
+          background-color: $blue;
+          color: rgb(33, 87, 106);
+        }
+        h2 {
+          margin: 4px;
+          box-sizing: border-box;
+          @include CVtextStyle;
+          margin-top: 2px;
+          border-radius: 4px;
+          padding-left: 10px;
+          @media screen and (max-device-width: 480px) {
+            text-align: center;
+          }
+        }
       }
     }
   }
@@ -1056,9 +1068,9 @@ $font3: "Xanh Mono", monospace;
 
   #menuContainer {
     position: absolute;
-    z-index: 4;
+    z-index: 1;
     height: 82vh;
-    width: 60%;
+    width: 66%;
     transform: translate(10%, 11%);
 
     border-radius: 4px;
