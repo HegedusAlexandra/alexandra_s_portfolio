@@ -994,10 +994,12 @@ $font3: "Xanh Mono", monospace;
         }
       }
       .desc-container {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @media screen and (max-device-width: 480px) {
+          height: fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
         a {
           all: unset;
