@@ -63,12 +63,6 @@ export default function Projects() {
             <h2 className="description">Multilingual</h2>
             <h2 className="description">Sass</h2>
           </div>
-          <div className="desc-container">
-            <a href="https://hegedusalexandra.github.io/weather_forecast/frontend/">
-              Check it out!
-            </a>
-            <h2 className="description">JavaScript</h2>
-          </div>
         </div>
       </div>
     </div>
