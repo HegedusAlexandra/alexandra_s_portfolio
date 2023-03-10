@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alexandra_s_portfolio/static/css/main.6dc4b7c4.css",
-    "main.js": "/alexandra_s_portfolio/static/js/main.32f215e3.js",
+    "main.js": "/alexandra_s_portfolio/static/js/main.fe1a4ca1.js",
     "static/js/787.76f235eb.chunk.js": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js",
     "static/media/OMAS.gif": "/alexandra_s_portfolio/static/media/OMAS.c9ea7e02cb9170768d8e.gif",
     "static/media/Corsica.jpg": "/alexandra_s_portfolio/static/media/Corsica.20be2979d4223f6a9535.jpg",
@@ -17,11 +17,11 @@
     "static/media/zugspitze.jpg": "/alexandra_s_portfolio/static/media/zugspitze.f76b0af9460ad32a6cf5.jpg",
     "index.html": "/alexandra_s_portfolio/index.html",
     "main.6dc4b7c4.css.map": "/alexandra_s_portfolio/static/css/main.6dc4b7c4.css.map",
-    "main.32f215e3.js.map": "/alexandra_s_portfolio/static/js/main.32f215e3.js.map",
+    "main.fe1a4ca1.js.map": "/alexandra_s_portfolio/static/js/main.fe1a4ca1.js.map",
     "787.76f235eb.chunk.js.map": "/alexandra_s_portfolio/static/js/787.76f235eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6dc4b7c4.css",
-    "static/js/main.32f215e3.js"
+    "static/js/main.fe1a4ca1.js"
   ]
 }
